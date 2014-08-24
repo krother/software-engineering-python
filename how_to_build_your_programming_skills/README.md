@@ -1,11 +1,17 @@
 # How to build your programming skills?
 
-* Kata
+## Kata
   * CodingDojo
   * Rosalind
   * http://www.codewars.com
   * http://codekata.com/kata/kata20-klondike/
   * http://codingdojo.org/cgi-bin/index.pl?KataCatalogue
+  * codecademy
+
+## Modular programming
+
+Kata does give you hacking skills, but not thinking in larger and more abstract categories.
+
 
 ---
 

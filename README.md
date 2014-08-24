@@ -20,3 +20,5 @@ It is assumed that you know how to program. This book focuses on metaprogramming
 * Rother, Rother, Puton, Potrzebowski, Wywial, Bujnicki.
 * Alyssa Goodman. Ten Simple Rules for the Care and Feeding of Scientific Data. PLOS CompBiol, 2014.
 
+## License
+This book is released under the conditions of the Creative Commons Attribution Share-alike license 3.0.

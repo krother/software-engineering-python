@@ -4,7 +4,7 @@ With heaps of data to evaluate, scientific software has become increasingly rele
 
 In this chapter, we introduce five criteria by which you can recognize good software:
 
-
+![Criteria for good scientific software](software_qa.png)
 
 ### 1. What has the software been used for?
 
@@ -47,6 +47,5 @@ If a program fails several of the above quality indicators, it does not mean tha
 
 The list in this post is incomplete. If you are an author and I missed your favorite engineering technique, or if you use scientific software and have a suggestion what would make your life easier, drop me a line.
 
+#### Acknowledgements
 Thist text emerged from a discussion round at the GFZ Potsdam, with special support from Bernadette Fritsch, Björn Brembs, Dominik Reusser and Jens Klump.
-
-It is released under the conditions of the Creative Commons Attribution Share-alike license 3.0.

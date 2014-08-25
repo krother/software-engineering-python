@@ -25,7 +25,7 @@
 * non-programmer managers
 * lack of courage to clean up and to throw away things
 * IP delusion - owning software is very difficult in practice. Comparable to owning a cooking recipe. Our perception of IP derives from Coca Cola. But in most cases owning a recipe is pretty useless. It is the restaurant you build around it that makes it valuable.
-* reproducibility - availability of code is not enforced by journals
+* reproducibility - availability of code is not enforced by journals [How science goes wrong, The Economist]
 * resilience - taking pride to solve intellectual problems on your own is a trademark of scientists. But it does not contribute to good transparent code.
 * lack of humility. If you haven't written enough code. Fortunately easy to fix.
 * sustainability - REF Jens Klump
@@ -36,3 +36,12 @@
 
 ### What you need to know as a PI
 Programming is difficult. It is counter-intuitive. If you are a non-programmer and think you understand programming, chances are you don't. Learn programming or believe what programmers tell you and get out of the way.
+
+**I want to help! What PI can do.**
+[Where to put it? Perhaps separate section from PI perspective, talk woth PI]
+
+* set clear goal.
+* help with specification.
+* learn how to run tests.
+* help to design acceptance test, user stories, use cases.
+* help to get 'my precious' feeling for the developer.

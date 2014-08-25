@@ -19,6 +19,7 @@ It is assumed that you know how to program. This book focuses on metaprogramming
 * Nick Barnes. Publish your computer code: it is good enough. Nature 467, 2010, 753.
 * Rother, Rother, Puton, Potrzebowski, Wywial, Bujnicki.
 * Alyssa Goodman. Ten Simple Rules for the Care and Feeding of Scientific Data. PLOS CompBiol, 2014.
+* How science goes wrong, The Economist, 2013.
 
 ## License
 This book is released under the conditions of the Creative Commons Attribution Share-alike license 3.0.

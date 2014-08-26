@@ -48,3 +48,6 @@ Even a simple bug like the following will go unnoticed:
 Therefore, Python is not very good at telling whether the code you took over is working. Strictly typed languages like Java and C enfore more strict rules that can be checked automatically while compiling the program
 
 Python good for rapid prototyping, but bad for legacy code.
+
+## other legacy code problems
+*

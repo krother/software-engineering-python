@@ -22,6 +22,11 @@ Fortunately lack of documentation is easy to replace: You need the former contri
 ### Check these factors before taking over
 There is one argument why you should insist on inspecting the code: Your supervisor might not be aware of that the project is booby-trapped. A program that looks good from the outside (e.g. a shiny GUI or web interface) and has produced scientific results may seem flawless from a supervisors perspective. It may still be entirely rotten from the inside.
 
+### Divide and conquer
+extract small parts, clean them up and test one by one.
+This is very hard.
+
+#### Make a separate library of some parts
 
 ### Rewriting the code
 There is no recycling bin for code. There is nothing bad about throwing away code. If it does not work, write it from scratch.

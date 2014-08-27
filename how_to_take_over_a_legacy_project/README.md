@@ -1,9 +1,4 @@
 # How to take over a legacy project?
 
-### Main Point: Use the checklist to assess a project your are taking over before you start coding.
-
-### Structure:
-1. Story: Modomics
-2. Problem Description
-3. Things you can do
-4. Conclusion: The Checklist
+### Goal
+This chapter gives you metrics that you can use to evaluate code that you inherit from someone else. The metrics help you to make educated decisions on how to proceed.

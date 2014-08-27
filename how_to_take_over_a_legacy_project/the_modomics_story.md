@@ -8,9 +8,9 @@ There was a hard deadline for publication in June. In May, the hard disk of the 
 
 Working on the code was tough: *"What does this mean? How does this work? Why is this character on the web page three positions further to the left than it should?"*
 
-When the deadline drew near, I worked literally every minute until the very last moment, including late evenings and weekends. I was constantly overslept and emotionally brittle to the point of resignation. It took me a year to realize that the correct term for this was burnout.
+When the deadline drew near, I worked literally every minute until the very last moment, including late evenings and weekends. I was constantly overslept and emotionally brittle to the point of resignation. It took me a year to realize the correct term for this: burnout.
 
-I missed the deadline, or to be precise, my supervisor hit the **STOP** button. An extra year was the best thing that could happen to the project and its maintainer. I spent more time talking to scientists using the site, clean up many of the issues, and introduce a cleaner structure. In the end, I had rewritten most of the code.
+I missed the deadline, or to be precise, my supervisor hit the **STOP** button. An extra year was the best thing that could happen to the project and its maintainer. First of all, I relaxed. Second, I spent more time talking to scientists using the site, cleaned up many of the issues, and introduce a better structure of Python modules. In the end, I had rewritten most of the code. The site was working, the publication got accepted.
 
 Finally, it was time to give the project away to my successors Sebastian and Kaja. The first thing Sebastian did was that he dumped most of the code and rewrote it in Django within two weeks. Kaja kept on maintaining the server and so the database lives on until the day I write these lines, with different code, but the same vision as when it was first created.
 
@@ -28,14 +28,4 @@ What I learned is that taking over a program from someone is difficult.
 | Technologies used | TurboGears web server <br> PostGreSQL database <br> Biopython <br> PIL |
 | Development tools used | bug tracker (TRAC) <br> automatic tests (partial) <br> SVN repository <br> User Stories <br> Entity-relationship diagram |
 | Publications | ADD 3 REFERENCES |
-
-#### Development:
-- Everything stored in a single
-SVN repository.
-- Continuously kept User Stories.
-Python libs:
-TurboGears
-PIL
-BioPython
-
 

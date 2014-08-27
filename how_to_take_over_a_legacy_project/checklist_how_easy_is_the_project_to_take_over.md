@@ -1,12 +1,28 @@
 # Checklist: How easy is the project to take over?
 * Do you know who developed what?
-* Do you knowthe which languages / frameworks / technologies were used? Do you know them?
+
+* Do you know the languages / frameworks / databases / technologies were used? Do you know them?
 * Is there a repository?
 * Can you deploy?
 * Are there any tests?
-* Do you know what the program should do?
-* Are there real users you can talk to?
-* are all files related to the project stored in one place?
+* Do you know what the program does / should do?
+* Is it possible to destinguish well defined parts of the program
+* Is it possible to describe in one sentence what the program does?
+* Are pople who developed the first version on place and willing to help?
+* Does the development and production branch have the same functionalities?
+* How many platforms the program covers?
+* What is the scor in pylint?
+* How many LOC you have?
+* Is code divided into modules, classes, methods and functions?
+* Does program have any users? Do you know them? Can you talk to them on a regular basis?
+* Are you going to use program yourself?
+* Is there a documentation?
+* Is there a specification?
+* Which percent of functions have docstrings?
+* Can you see any examples of codegolf?
+* What is the depth of the most nested loop / if statemnt?
+* How understendable are variable names?
+* * are all files related to the project stored in one place?
 * can you install the program by yourself?
 * do you have a chance to meet the former developer regularly?
 * are there other people who know the code still actively involved?
@@ -14,7 +30,6 @@
 * do you have authority to change everything?
 * is there a backlog / ticket system / bugtracker? How old are the last entries?
 * how many of the main parameters of the project will change the moment you take over? (team, project size, goals, features, platform)
-
 
 # How the rx project started:
 1. Access to repository.

@@ -28,11 +28,10 @@
    * [The Modomics story](how_to_take_over_a_legacy_project/the_modomics_story.md)
    * [Problems with legacy code](how_to_take_over_a_legacy_project/problems_with_legacy_code.md)
    * [What you can do as the person taking over](how_to_take_over_a_legacy_project/what_you_can_do_as_the_person_taking_over.md)
-   * [What you can do as the outgoing programmer](how_to_take_over_a_legacy_project/what_you_can_do_as_the_outgoing_programmer.md)
-   * [What you can do as a supervisor](how_to_take_over_a_legacy_project/what_supervisors_can_do.md)
    * [Checklist: How easy is the project to take over?](how_to_take_over_a_legacy_project/checklist_how_easy_is_the_project_to_take_over.md)
 * [How to build your programming skills?](how_to_build_your_programming_skills/README.md)
    * [The Frutris story](how_to_build_your_programming_skills/the_frutris_story.md)
    * [Make some games!](how_to_build_your_programming_skills/make_some_games.md)
 * [How to recognize good scientific software?](how_to_recognize_good_scientific_software/README.md)
+* [When you are a supervisor](when_you_are_a_supervisor/README.md)
 

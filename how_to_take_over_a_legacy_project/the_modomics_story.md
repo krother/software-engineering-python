@@ -1,43 +1,33 @@
 # The Modomics story
 
-DNA consists of four nucleotides: A, G, C and T. DNAs cousin RNA contains a lot more. RNA Enough to fill a database.
-
-This is what we did.
-
-
+In March 2007 I inherited the [Modomics database](http://www.genesilico.pl/modomics) from Staszek, a MSc student in the lab. Staszek handed me the passwords. Then he moved to Germany. Although he did whatever he could to support me by email, a sackful of knowledge moved away with him.
 
 ![Modomics](modomics.jpg)
 
-*deadlines, last minute, burnout etc.*
+There was a hard deadline for publication in June. In May, the hard disk of the server crashed. I restored most of the code from the SVN repository and loaded the DB dump. However, some features were lost on the way. I was determined to not only fully recover the project, but also to add enough value to submit the publication on time.
 
-* has gone through many hands: Staszek, Kristian, Betonek, ..?
-* worst burnout: deadline missed.*
-* fighting figuring out what the author meant
-* cleaning up uncommented code
-* small issues: single characters that were wrong on the page
-* lack of documentation "What did he do???"
-* KR: dumped most the code and rewrote from scratch
-* Betonek: dumped most of the code and rewrote from scratch
-* Kaja: took care of maintaining the server
+Working on the code was tough: *"What does this mean? How does this work? Why is this character on the web page three positions further to the left than it should?"*
 
-What saved the project:
-* users who were engaged and provided helpful feedback
-* vision did not change a bit
-* details did
-* we were not afraid to dump the code and
+When the deadline drew near, I worked literally every minute until the very last moment, including late evenings and weekends. I was constantly overslept and emotionally brittle to the point of resignation. It took me a year to realize that the correct term for this was burnout.
 
---> Topic of the chapter: technical debt
+I missed the deadline, or to be precise, my supervisor hit the **STOP** button. An extra year was the best thing that could happen to the project and its maintainer. I spent more time talking to scientists using the site, clean up many of the issues, and introduce a cleaner structure. In the end, I had rewritten most of the code.
 
-#### Purpose:
-Web database of modified
-RNA nucleotides.
+Finally, it was time to give the project away to my successors Sebastian and Kaja. The first thing Sebastian did was that he dumped most of the code and rewrote it in Django within two weeks. Kaja kept on maintaining the server and so the database lives on until the day I write these lines, with different code, but the same vision as when it was first created.
 
-#### Developers (2009):
-2 coders
-4 data curators
-1 project owner
-Duration:
-3 years
+What I learned is that taking over a program from someone is difficult.
+
+### Modomics: Project Overview
+
+| Name | Modomics |
+|------|----------|
+| Summary | Web database of modified RNA nucleotides. |
+| Duration | 2006 - 2014 |
+| Developers | 2 coders (2009) |
+| Stakeholders | 2 senior scientists, 4 data curators (2009) |
+| Size | ~10000 Python LOC |
+| Technologies used | TurboGears web server <br> PostGreSQL database <br> Biopython <br> PIL |
+| Development tools used | bug tracker (TRAC) <br> automatic tests (partial) <br> SVN repository <br> User Stories <br> Entity-relationship diagram |
+| Publications | ADD 3 REFERENCES |
 
 #### Development:
 - Everything stored in a single
@@ -47,17 +37,5 @@ Python libs:
 TurboGears
 PIL
 BioPython
-
-#### Results:
-published in
-Nucl.Acids.Res.(2009)
-
-#### History repeats itself:
-- In 2007, the HD of this server crashed, too.
-- Restored the site from SVN and loaded the DB dump.
-- Still, lost some features someone had added manually
-to the production server.
--> Bad condition, but alive.
-[I don't understend this section]
 
 

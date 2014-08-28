@@ -27,7 +27,7 @@
 * [How to take over a legacy project?](how_to_take_over_a_legacy_project/README.md)
    * [The Modomics story](how_to_take_over_a_legacy_project/the_modomics_story.md)
    * [Problems with legacy code](how_to_take_over_a_legacy_project/problems_with_legacy_code.md)
-   * [What you can do as the person taking over](how_to_take_over_a_legacy_project/what_you_can_do_as_the_person_taking_over.md)
+   * [When you inherit a project](how_to_take_over_a_legacy_project/what_you_can_do_as_the_person_taking_over.md)
    * [Checklist: How easy is the project to take over?](how_to_take_over_a_legacy_project/checklist_how_easy_is_the_project_to_take_over.md)
 * [How to build your programming skills?](how_to_build_your_programming_skills/README.md)
    * [The Frutris story](how_to_build_your_programming_skills/the_frutris_story.md)

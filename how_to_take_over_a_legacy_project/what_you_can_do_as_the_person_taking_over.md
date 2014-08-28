@@ -113,4 +113,12 @@ Reasons why many programmers don't is taking pride in someone's code. Also non-d
 
 *Brooks: Prepare to throw one away*
 
+### Play a Game
 
+Mission Impossible: how to prepare release 2.0 in 1 day.
+
+The Anti-Problem: how to create program noone will use.
+
+Empathy Map: In wchich field your user works? Which tools he already uses? What does he want to publish? With which problems he struglles on dailybases? 
+
+### Keep track of appearing problems

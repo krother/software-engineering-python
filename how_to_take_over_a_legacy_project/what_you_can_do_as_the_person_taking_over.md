@@ -1,7 +1,97 @@
-# What you can do as the person taking over
+# When you inherit a project
+
+When you take over a project, there are four aspects to consider before you decide what to do:
+
+1. How big is the project?
+2. What infrastructure is there?
+3. How well-maintained is the code?
+4. Who is there to help you?
+
+In the following, you find criteria for each question. In the end, the full checklist and a guideline help you to decide possible consquences.
+
+## How big is the project?
+Is your role in the new project going to be that of a plumber (go down, fix it) or that of a librarian (keep an overview)? Before everything else, that depends on project size.
+
+### How much code do you have?
+The amount of code gives you a ballpark figure of how much you need to readn and understand before getting to work.
+
+You can count the total number of files on Unix:
+
+    find . -name "*.py" | wc -l
+
+
+The following command gives you the total number of lines of code (LOC) in all Python files in a Python directory tree:
+
+
+    find . -name "*.py" | xargs wc -l
+
+To identify unique lines, try:
+
+    find . -name "*.py" | xargs cat | sort | uniq | wc -l
+
+For instance, in the ModeRNA project, we found 154 Python files with 27000 lines, of which 16000 were unique.
+
+#### What the LOC number tells you?
+You can use LOC compare a project to other programs you wrote. For comparison, use a logarithmic scale:
+
+LOC     | example           | points
+--------|-------------------|--------
+<100    | script to sort data files | 1
+<1000   | program implementing one algorithm with a simple interface | 2
+<10000  | calculation pipeline with multiple modes of operation | 3
+<100000 | software package (Biopython)  | 4
+
+If the size of the inherited project goes up by at least one order of magnitude compared to your biggest project so far, you will need help.
+
+### How many components are there?
+Your first Python programs probably contained Python code and not much else. However, when projects get more complex, you may need to take care of other components: SQL databases, HTML templates, JavaScript code, R scripts, C libraries etc. You also should take into account Python packages that are built and maintained separately (number of setup.py scripts). If there is more than one, your work gets more complex.
+
+The number of components is a good metric to start with, because you will find out by looking at file extensions (with the exception of databases).
+
+On one hand, having separate components in a bigger project is a good thing. Separate components means clean interfaces. On the other hand, there are more connections that can break.
+
+You can count the number of components you will be directly responsible for:
+
+| components | points |
+|------------|--------|
+| Python, JavaScript, HTML, SQL database, R, C, additional Python sub-projects | 1 each |
+
+For instance, the Modomics database scored a **3** at the time I was maintaining it: There was a Python web server (TurboGears), a PostGreSQL database, and lots of HTML code. I did not count the JavaScript components, because they were imported as ready-made components that were never modified or even looked at.
+
+### How many platforms do you support?
+They said Python is platform-independent. That doesn't mean everything works everywhere. As a minimum, if your program supports Linux and Mac, you need to test it on Linux and Mac. That adds another dimension to complexity:
+
+| platform     | points |
+|--------------|--------|
+| Linux        | 1      |
+| Windows      | 1      |
+| Mac          | 1      |
+| binary distribution | 1    |
+| Web version  | 1      |
+| mobile app   | 1      |
+
+In the Modomics project, there was only the web interface I had to take care of. That was a relief!
+
+### Combined complexity
+
+You can combine the three numbers from the sections above to a single complexity value ranging from 3-16 points.
+
+    complexity = LOC + components + platforms
+
+Some developers might argue what is the correct formula to combine the three values. The actual amount of work required might as well be exponential to the complexity. We don't know for sure.
+
+What we know is that the comlexity lets you describe the size of the project: 5 is comfortable, 8 is challenging, and 12 means that it probably is going to be tough.
+
+
+## What infrastructure is there?
+
+
+## How well-maintained is the code?
+
+## Who is there to help you?
 
 ### pylint
-Gives you a quick ballpark figure how bad the situation is
+The **pylint** tool gives you a quick ballpark figure how bad the situation is. You can use it to analyze any Python file:
 
 
     pylint setup.py
@@ -26,6 +116,13 @@ Smaller than zero means trouble, 1-4 needs cleanup, 5-7 is reasonable and above 
 #### Warnings about code structure
 * pay attention to warnings about 'too many methods per class' / 'functions per module'.
 
+#### Warnings you should ignore
+EXAMPLE
+
+Just don't try to push every Python file to a 10.0. It is OK to ignore warning messages you don't agree with. Use your reason.
+
+We find working with pylint very rewarding. You can start to fix issues, re-run pylint and see your score improve.
+
 ### Tests
 * example data
 * automatic tests
@@ -46,31 +143,6 @@ The HTML coverage report helps you to find problematic areas.
 * paper, reproduce results. If this is not possible,
 
 
-### How big is the program?
-
-You can count the total number of files:
-
-    find . -name "*.py" | wc -l
-
-
-The following Unix command gives you the total number of lines in all Python files in a Python directory tree:
-
-
-    find . -name "*.py" | xargs wc -l
-
-To identify unique lines, try:
-
-    find . -name "*.py" | xargs cat | sort | uniq | wc -l
-
-In the ModeRNA project, we found 154 Python files with 27000 lines, of which 16000 were unique.
-
-If the size of the project goes up by one order of magnitude or more compared to your biggest project so far, you will need help.
-
-### How complex is the project?
-
-Another factor to consider is the number of components that are being used: First languages Python, SQL, HTML, CSS, JavaScript, C, R, etc. Second libraries
-* on one hand: more protocols - bad, because more to learn
-* on the other hand: more protocols can mean you have clean interfaces.
 
 
 ### documentation
@@ -101,11 +173,16 @@ where reactions and contingencies are interpreted?
 ### Check these factors before taking over
 There is one argument why you should insist on inspecting the code: Your supervisor might not be aware of that the project is booby-trapped. A program that looks good from the outside (e.g. a shiny GUI or web interface) and has produced scientific results may seem flawless from a supervisors perspective. It may still be entirely rotten from the inside.
 
+## Measures to take
+
 ### Divide and conquer
 extract small parts, clean them up and test one by one.
 This is very hard.
 
 #### Make a separate library of some parts
+
+#### Reduce scope
+kick out deployment. Web-only or source-only are viable alternatives.
 
 ### Rewriting the code
 There is no recycling bin for code. There is nothing bad about throwing away code. If it does not work, write it from scratch.
@@ -113,4 +190,5 @@ Reasons why many programmers don't is taking pride in someone's code. Also non-d
 
 *Brooks: Prepare to throw one away*
 
-
+### Change one thing at a time
+How many of the main parameters of the project will change the moment you take over? (team, project size, goals, features, platform)

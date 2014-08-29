@@ -1,6 +1,6 @@
 # Consequences
 
-What measures can you take to get a firm hold on the code you inherited? Here you find a few options.
+What measures (MR actions/means) can you take to get a firm hold on the code you inherited? Here you find a few options.
 
 ### Terminate
 A clean decision to stop the project altogether can save you months or even years of prolonged struggle. If it turns out that the project is unmaintainable, there may be no other way out. Because efforts invested will be lost, convincing others of choosing this option will be difficult. Consider it as a last resort.
@@ -8,7 +8,8 @@ A clean decision to stop the project altogether can save you months or even year
 ### Rewrite
 Imagine you have built a small Cessna airplane, but figure out what you really need is a Boeing 727. Nobody would say *"Oh, great, you have a pair of wings already."* It is the same with programming.
 
-There is nothing bad about throwing away code. It does not take up space and does not pollute the environment. It the code does not work, write it from scratch.
+There is nothing bad about throwing away code. It does not take up space and does not pollute the environment. If the code does not work, write it from scratch.
+MR: What if it works 'but only'?
 
 Rewriting a program happens frequently, and often it is faster than fixing the old one. Fred Brooks (The Mythical Man-Month, 1982, p115ff.) recommends to even plan for throwing away the first design. Incorporating some parts from existing code into a new design is easier than assuming all existing parts can be reused.
 

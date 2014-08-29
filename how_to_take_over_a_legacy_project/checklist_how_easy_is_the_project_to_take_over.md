@@ -13,7 +13,7 @@ Use the checklist to assess a project your are taking over before you start codi
 - [ ]  Do functions and classes have docstrings?
 - [ ]  Are variable names understandable?
 - [ ]  Is the code divided into modules, classes and functions of reasonable size?
--
+
 #### Engineering infrastructure
 - [ ]  Is there a repository?
 - [ ]  Are there any automatic tests?
@@ -29,8 +29,11 @@ Use the checklist to assess a project your are taking over before you start codi
 - [ ]  Do you know all languages / technologies used?
 
 ## Using the checklist
+MR: Could be more general not only about complexity.
 
-You can combine the three numbers from the sections above to a single complexity value ranging from 3-16 points.
+You can combine the three numbers from the sections above to a single complexity value ranging from 3-16 points. MR: Why 16?
+
+MR: Would be nice to have some comments on how to assign these points. e.g. something like: It means that, if you consider LOC, if you have 100-line script to debug, it will have score 1, if you have code with 30 000 lines that it will be 5, and evrything inbetween is your subjective evaluation of the program size.   
 
     complexity = LOC + components + platforms
 

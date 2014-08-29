@@ -56,7 +56,9 @@ Experienced programmers can create problematic code, too. In the first place, an
 
 The problem is that sometimes it takes another experienced programmer to understand their code. One example of such code is called **code golf**. In code golf, the programmer tries to implement a program with as few key strokes as possible:
 
-    return zip(nested, [str(x) for x in data[1:] if x.at < 1.5])
+    return max([(d.count(x),x) for x in set(d)])[1]
+
+This line returns the most frequent element from a list. It is a moderate example, we've seen much worse.
 
 The moment an experienced programmer departs and leaves a lot of functional but hardly maintainable code, the project can suddenly go into debt.
 

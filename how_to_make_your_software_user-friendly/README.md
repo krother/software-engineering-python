@@ -18,3 +18,14 @@
     - when he would use the application
     - how often will he use the system
 - Youtube: emotional design: Don Norman
+
+
+## Usability
+
+UXP
+
+User-centric design
+
+The Anti-Problem: how to create program no one will use.
+
+Empathy Map: In wchich field your user works? Which tools he already uses? What does he want to publish? With which problems he struglles on dailybases?

@@ -1,26 +1,25 @@
-# When you inherit a project
+# Assessing an inherited project
 
 When you take over a project, there are four aspects to consider before you decide what to do:
 
 1. How big is the project?
-2. What infrastructure is there?
-3. How well-maintained is the code?
+2. What engineering infrastructure is there?
+3. How well-written is the code?
 4. Who is there to help you?
 
-In the following, you find criteria for each question. In the end, the full checklist and a guideline help you to decide possible consquences.
+In the following, you find criteria for each question. In the end, you get a full checklist to try on your own projects and possible consequnces.
 
 ## How big is the project?
 Is your role in the new project going to be that of a plumber (go down, fix it) or that of a librarian (keep an overview)? Before everything else, that depends on project size.
 
 ### How much code do you have?
-The amount of code gives you a ballpark figure of how much you need to readn and understand before getting to work.
+The amount of code gives you a ballpark figure of how much you need to read and understand before getting to work.
 
 You can count the total number of files on Unix:
 
     find . -name "*.py" | wc -l
 
-
-The following command gives you the total number of lines of code (LOC) in all Python files in a Python directory tree:
+A common measure is the number of lines of code (LOC). The following command gives you the total number of LOC for all Python files in a Python directory tree:
 
 
     find . -name "*.py" | xargs wc -l
@@ -32,21 +31,21 @@ To identify unique lines, try:
 For instance, in the ModeRNA project, we found 154 Python files with 27000 lines, of which 16000 were unique.
 
 #### What the LOC number tells you?
-You can use LOC compare a project to other programs you wrote. For comparison, use a logarithmic scale:
+You can use the LOC to compare a project to other programs you wrote. For comparison, use a logarithmic scale:
 
 LOC     | example           | points
 --------|-------------------|--------
-<100    | script to sort data files | 1
-<1000   | program implementing one algorithm with a simple interface | 2
-<10000  | calculation pipeline with multiple modes of operation | 3
-<100000 | software package (Biopython)  | 4
+&lt;100    | script to sort data files | 1
+&lt;1000   | program implementing one algorithm with a simple interface | 2
+&lt;10000  | calculation pipeline with multiple modes of operation | 3
+&lt;100000 | software package (Biopython)  | 4
 
 If the size of the inherited project goes up by at least one order of magnitude compared to your biggest project so far, you will need help.
 
 ### How many components are there?
 Your first Python programs probably contained Python code and not much else. However, when projects get more complex, you may need to take care of other components: SQL databases, HTML templates, JavaScript code, R scripts, C libraries etc. You also should take into account Python packages that are built and maintained separately (number of setup.py scripts). If there is more than one, your work gets more complex.
 
-The number of components is a good metric to start with, because you will find out by looking at file extensions (with the exception of databases).
+The number of components is a good metric to start with, because you will find out by looking at file extensions (with the exception of databases, servers and other machinery).
 
 On one hand, having separate components in a bigger project is a good thing. Separate components means clean interfaces. On the other hand, there are more connections that can break.
 
@@ -56,10 +55,10 @@ You can count the number of components you will be directly responsible for:
 |------------|--------|
 | Python, JavaScript, HTML, SQL database, R, C, additional Python sub-projects | 1 each |
 
-For instance, the Modomics database scored a **3** at the time I was maintaining it: There was a Python web server (TurboGears), a PostGreSQL database, and lots of HTML code. I did not count the JavaScript components, because they were imported as ready-made components that were never modified or even looked at.
+For instance, in the Modomics database I was maintaining **thre** components: There was a Python web server (TurboGears), a PostGreSQL database, and lots of HTML code. I did not count the JavaScript components, because they were imported as ready-made scripts that were never modified or even looked at.
 
 ### How many platforms do you support?
-They said Python is platform-independent. That doesn't mean everything works everywhere. As a minimum, if your program supports Linux and Mac, you need to test it on Linux and Mac. That adds another dimension to complexity:
+They said Python is platform-independent. That doesn`t mean everything works on any platform automatically. You need to test it. For instance, if your program supports Linux and MacOS, you need to test it on Linux and MacOS. That adds another dimension to complexity:
 
 | platform     | points |
 |--------------|--------|
@@ -67,43 +66,32 @@ They said Python is platform-independent. That doesn't mean everything works eve
 | Windows      | 1      |
 | Mac          | 1      |
 | binary distribution | 1    |
-| Web version  | 1      |
+| web version  | 1      |
 | mobile app   | 1      |
 
 In the Modomics project, there was only the web interface I had to take care of. That was a relief!
 
-### Combined complexity
-
-You can combine the three numbers from the sections above to a single complexity value ranging from 3-16 points.
-
-    complexity = LOC + components + platforms
-
-Some developers might argue what is the correct formula to combine the three values. The actual amount of work required might as well be exponential to the complexity. We don't know for sure.
-
-What we know is that the comlexity lets you describe the size of the project: 5 is comfortable, 8 is challenging, and 12 means that it probably is going to be tough.
 
 
-## What infrastructure is there?
+## How well-written is the code?
 
-
-## How well-maintained is the code?
-
-## Who is there to help you?
+Python has a standard style guide for code, known as [PEP8](https://www.python.org/dev/peps/pep-0008). Adhering to PEP8 is good, because it makes your code readable for others. It also helps you to write in a consistent style. Think of PEP8 as your font, if the text is your code.
 
 ### pylint
-The **pylint** tool gives you a quick ballpark figure how bad the situation is. You can use it to analyze any Python file:
+The **pylint** tool checks whether your code conforms to the PEP8 coding guidelines. pylint gives you a ballpark figure how good or bad the code is. You can use it to analyze any Python file:
 
+    pylint modomics.py
 
-    pylint setup.py
+In the output, there are two sections to pay attenton to:
 
+### Code score
+In the third last paragraph of the pylint output you find a score of up to 10 points:
 
-In the output, there are multiple things to pay attenton to:
+    Global evaluation
+    -----------------
+    Your code has been rated at 8.18/10
 
-Link to PEP8
-
-#### Code score
-Smaller than zero means trouble, 1-4 needs cleanup, 5-7 is reasonable and above that someone did a great job.
-
+Smaller than zero means trouble, 1-4 needs cleanup, 5-7 is reasonable and above means that someone did a great job.
 
 | pylint score  | means              |
 | --------------|--------------------|
@@ -112,21 +100,73 @@ Smaller than zero means trouble, 1-4 needs cleanup, 5-7 is reasonable and above 
 | 5.0 - 7.0     | reasonable quality |
 | > 7.0         | great code!        |
 
+### Warnings
+At the top of the output, you find a section with warning messages. Each warning contains the line number the warning refers to:
 
-#### Warnings about code structure
-* pay attention to warnings about 'too many methods per class' / 'functions per module'.
+    C: 32,0: Line too long (88/80)
+    W: 30,0: TODO: same order of arguments as in ModernaStructure
+    C:  1,0: Missing docstring
+    R: 19,0:Renumerator: Too many public methods (30/20)
 
-#### Warnings you should ignore
-EXAMPLE
+These warnings point you to the following issues:
 
-Just don't try to push every Python file to a 10.0. It is OK to ignore warning messages you don't agree with. Use your reason.
+#### Bugs and dead code
 
-We find working with pylint very rewarding. You can start to fix issues, re-run pylint and see your score improve.
+    W:117,12:Template.prepare_identifiers: Unused variable 'x'
 
-### Tests
-* example data
-* automatic tests
-* test coverage
+This message indicates that line 117 either won't work or that the code has not been used at all.
+
+#### Coding style
+
+    C: 32,0: Line too long (88/80)
+    C:134,16:Renumerator.get_identifiers_list: Operator not preceded by a space
+
+Style issues regarding spaces, indentation and line lengths raised by pylint affect readability and are generally easy to fix.
+
+#### Docstrings
+
+    C:  1,0: Missing docstring
+
+Functions and classes without docstrings are more difficult to understand. If you get a lot of docstring warnings your code may be hard to understand.
+
+#### Variable names
+
+    C:114,8:Renumerator.prepare_identifiers: Invalid name "fn" (should match [a-z_][a-z0-9_]{2,30}$)
+
+Descriptive variable names are a big plus for code readability. Of course, it does not help much to replace **l** by **data_list** in order to satisfy pylint. But the name **fragment** tells you a lot more than **fn**.
+
+- [ ]  What is the depth of the most nested loop / if statement?
+
+#### Code structure
+
+    R: 19,0:Renumerator: Too many public methods (30/20)
+    R: 32,4:Renumerator.letter_generator: Method could be a function
+    R: 45,0:RNAResidue: Too many instance attributes (11/7)
+    R:328,0:NucleotidePattern: Too few public methods (1/2)
+
+Warnings about the number of classes / methods / functions indicate that the structure of the code needs improvement. You don't need to worry if you see a few warnings like these, but if you see them repeatedly, it may help readability to divide the code into units of more reasonable size.
+
+### Summary
+pylint is a powerful tool to analyze your code for readability and style. We find working with pylint very rewarding. You can start immediately to fix issues, re-run pylint and see your score improve.
+
+Don't try to push every Python file to a score of 10.0. It is OK to ignore warning messages you don't agree with. Use your reason.
+
+
+## What engineering infrastructure is there?
+
+In this section, a number of engineering tools you can check for are enumerated briefly. All of them are explained in more detail in other chapters.
+
+### Repository
+Is there a repository with the latest version of all code? Are files kept there as well? Are there multiple branches? Do you know what they are for? Are past releases taged in the repository?
+
+### Automatic tests
+Are there any automatic tests? Do the tests pass? Is there a test suite that lets you run tests with a single command? Do the tests contain example data? Is there a way to reproduce results from a related publication quickly?
+
+If not, how can you verify that the program is working?
+
+#### Test coverage
+If you have an automatic test suite, you can calculate test coverage with the **coverage** program.
+
 If you have working tests, you can check what portions of the code they actually test:
 
     coverage run setup.py test
@@ -140,71 +180,33 @@ The HTML coverage report helps you to find problematic areas.
     coverage html
     firefox htmlcov/index.html &
 
-* paper, reproduce results. If this is not possible,
+
+### Installation / deployment
+Can you install the program out-of-the box or deploy it on a server? Can you set up an environment for development only? Does the program have features that only work in production (e.g. on one specific server)?
+
+### Documentation
+Is understandable documentation available? Is the documentation up-to-date? Does the documentation contain code examples? Can the code examples be checked automatically (doctests)?
+
+### Backlog or ticket system
+How are tasks in the project tracked? Is there a backlog, a ticket system or a bug tracker? How old are the last entries? If there is an analog instead of and electronic system for tasks and bugs (whiteboard, pin board, notebook), this is fine as well.
 
 
+## Who is there to help you?
 
+Code does not exist by itself. It is maintained by persons. When you assess a project, there are five main players who might support you:
 
-### documentation
-Yes it is usually bad. If there is good documentation usually everything else is in place.
+### The former developer
+Do you have a chance to meet the former developer on a regular basis? Preferably face-to-face, or on-line. Do you have an agreement to get direct support during a transition period?
 
-Fortunately lack of documentation is easy to replace: You need the former contributor next to your desk at least for some time. If you simply get handed the code and your predecessor departs for vacations or forever, expect big trouble.
+### Other developers
+Are the more people who have worked with the code? Are they still actively involved? A co-developer is a valuable source of information, because often they view the code from a similar perspective as you.
 
-### deployment
-..
+### Users
+Does the program have active users? Can you talk to them on a regular basis? Users help you to find out what matters and motivate you to keep going.
 
+### Your supervisor
+Is your supervisor aware of the state of the project? Can you discuss technical issues with him or a trusted mentor? Do you receive a clear vision or next major step for the project?
 
-# How the rx project started:
-(MR 2012)
-1. Access to repository.
-2. What is the rxncon data model?
-3. Where is the main page template?
-4. Where is the production code:
-e.g.
-looking at the Quick – where is the code responsible for input parsing, creating output for each button?
-where reactions and contingencies are interpreted?
-5. How large is the project (how to distinguish your code and default code generated by web2py, have you deleted any default code)?
-6. Is it possible to split the production code and web2py (what is your opinion – I think it would facilitate testing, but may be too much work)?
-7. Which parts of the code would you advise to start working with to get to know the code. Are there any independent fragments?
-8. How did you test your code?
-9. Do you measure the traffic on the web?
+### You
+After assessing the project, do you recall a similar situation you have been in before? Do you know all languages / technologies that the project contains? Are you going to use the program yourself?
 
-
-### Check these factors before taking over
-There is one argument why you should insist on inspecting the code: Your supervisor might not be aware of that the project is booby-trapped. A program that looks good from the outside (e.g. a shiny GUI or web interface) and has produced scientific results may seem flawless from a supervisors perspective. It may still be entirely rotten from the inside.
-
-## Measures to take
-
-### Divide and conquer
-extract small parts, clean them up and test one by one.
-This is very hard.
-
-#### Make a separate library of some parts
-
-#### Reduce scope
-kick out deployment. Web-only or source-only are viable alternatives.
-
-### Rewriting the code
-There is no recycling bin for code. There is nothing bad about throwing away code. If it does not work, write it from scratch.
-Reasons why many programmers don't is taking pride in someone's code. Also non-developers tend to interfere, because they think if part the code is already there, a part of the problem is already solved.
-
-*Brooks: Prepare to throw one away*
-
-
-### Play a Game
-In the scientific field you will probably never run out of ideas. Everyone will have a idea about new useful features. Scientits feel obliged to have ideas and usualy smart and sophisticated ones as thats who scientists are. The problem is to get it beck on the right track. Too many too sophisticated ideas can do harm to the project. If you are not a hacker: you maight feel overwelmed - 'How long the implementation af all that will take, and the deadline is, well next month'. If you are an exellent hacker and can implement all that in one moneth - perhaps it even worse - the technical depth will grow, and the project vision might get watered. 
-
-So how to deal with that: Firs ask the right questions. Then take a decisions. If you do brainstorming don't just open brainstorming sesion - you will end up with a huge load of ideas to implement by, well, prabobly by you. Close the section, choose the most important ideas for the project vision and discard some immediately.
-   
-Mission Impossible: how to prepare release 2.0 in 1 day.
-
-The Anti-Problem: how to create program noone will use.
-
-Empathy Map: In wchich field your user works? Which tools he already uses? What does he want to publish? With which problems he struglles on dailybases? 
-
-### Keep track of appearing problems
-
-
-### Change one thing at a time
-How many of the main parameters of the project will change the moment you take over? (team, project size, goals, features, platform)
-What to do with all bugs? I mean: that there was a see of bugs and small features to implement all around and it felt like runing in mad circles. One thing you touch causes three next problems 1 week of work for something that was planned for one day, and the pile of 'easy fixes' is pilling ... 

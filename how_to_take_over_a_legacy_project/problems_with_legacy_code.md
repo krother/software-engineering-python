@@ -15,7 +15,7 @@ What would you think if you found this piece of code?
 
 Looks bad enough in your own code. Now imagine finding these lines in a project you just inherited. What does it tell you about how well you will be able to work with the program?
 
-This is called **technical debt**.
+When existing code is hard to work with, this is called **technical debt**.
 
 ### Reasons for technical debt
 
@@ -30,9 +30,9 @@ Slowing down your pace of programming under pressure takes courage.
 
 
 #### 2. Lack of experience
-A programmer might write code that is difficult to maintain because he doesn't know better. An unexperienced programmer thinks that programming means writing code. An experienced programmer (like anyone interested in a book on software engineering) knows that sometimes programming means writing code, and sometimes it doesn't.
+A programmer might write code that is difficult to maintain because he doesn't know better. An unexperienced programmer thinks that programming means writing code. An experienced programmer - like anyone interested in a book on software engineering - knows that sometimes programming means writing code, and sometimes it doesn't.
 
-Lack of experience often results in code that is unnecessary long or complicated. This may happen even to experienced programmers switching from another language. Once, we stumbled upon the following Python code fragment written by a C programmer:
+Lack of experience often results in code that is unnecessary long or complicated. This happens even to experienced programmers switching from another language. Once, we stumbled upon the following Python code fragment written by a C programmer:
 
     i = 0; s = []
     f = open(filename,'r')
@@ -44,7 +44,7 @@ Lack of experience often results in code that is unnecessary long or complicated
     	s.append(ch)
     	i = i+1
 
-What this code fragment does is:
+This code fragment can be written as:
 
     s = list(open(filename).read())
 
@@ -54,29 +54,29 @@ Even though Python is considered easy to learn, writing good Python code is not 
 
 Experienced programmers can create problematic code, too. In the first place, an experienced programmer is very good to have: They write sophisticated programs incredibly quickly, master new technologies and make them work. Such programmers are rare and valuable.
 
-The problem is that sometimes it takes another experienced programmer to understand their code. One example of such code is called **code golf**. The programmer tried to make the program work with as few key strokes as possible:
+The problem is that sometimes it takes another experienced programmer to understand their code. One example of such code is called **code golf**. In code golf, the programmer tries to implement a program with as few key strokes as possible:
 
     return zip(nested, [str(x) for x in data[1:] if x.at < 1.5])
 
 The moment an experienced programmer departs and leaves a lot of functional but hardly maintainable code, the project can suddenly go into debt.
 
-As long as great programmers are in short supply, you need to find a workaround.
+As long as great programmers are in short supply, you need to find alternatives.
 
 ### 4. Python
 Python is not the best language to support legacy code.
 Pythons built-in method to check whether a program looks ok is importing modules. Importing gives you SyntaxErrors and the most crude exceptions. Unfortunately, Python does not provide you with anything more.
 
-Even a simple bug like the following will go unnoticed:
+Even a simple typo bug like the following will go unnoticed:
 
     def get_modification_name(id):
          return DATABASE.get(idx)
 
-Strictly typed languages like Java and C are fundamentally different. They enforce strict rules on variable types and method signatures that are checked automatically while compiling a program.
+Strictly typed languages like Java and C are fundamentally different in this aspect. They enforce strict rules on variable types and method signatures that are checked automatically while compiling a program. Without additional tests, Java and C code that compiles is much more reliable than Python code.
 
-Therefore, Python is not very good at telling whether the code you took over is working. You need to add tools to improve maintainability by yourself.
+Summarizing, Python is not very good at telling whether the code you took over is working. You need to add engineering tools to improve maintainability by yourself.
 
 ### Conclusion
 
-Technical debt is a serious problem when taking over a project. It can slow down development or even lead to a standstill. To avoid that situation, you need to figure out what the pitfalls in a project are.
+Technical debt is a serious problem when taking over a project. It can slow down development or even lead to a standstill. To avoid pitfalls, you need to figure out the strenghts and weaknesses of the code you are taking over.
 
-The next section gives you tools to analyze a project you just got on your desk.
+The next section gives you tools to assess a project you just got on your desk.

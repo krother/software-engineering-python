@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [Why software projects in science fail](why_software_projects_in_science_fail/README.md)
    * [Uncertainty](why_software_projects_in_science_fail/uncertainty.md)
    * [How to create meaningful software?](why_software_projects_in_science_fail/how_to_create_meaningful_software.md)
@@ -27,8 +28,9 @@
 * [How to take over a legacy project?](how_to_take_over_a_legacy_project/README.md)
    * [The Modomics story](how_to_take_over_a_legacy_project/the_modomics_story.md)
    * [Problems with legacy code](how_to_take_over_a_legacy_project/problems_with_legacy_code.md)
-   * [When you inherit a project](how_to_take_over_a_legacy_project/what_you_can_do_as_the_person_taking_over.md)
-   * [Checklist: How easy is the project to take over?](how_to_take_over_a_legacy_project/checklist_how_easy_is_the_project_to_take_over.md)
+   * [Assessing an inherited project](how_to_take_over_a_legacy_project/what_you_can_do_as_the_person_taking_over.md)
+   * [Checklist: How easy is a project to take over?](how_to_take_over_a_legacy_project/checklist_how_easy_is_the_project_to_take_over.md)
+   * [Consequences](how_to_take_over_a_legacy_project/consequences.md)
 * [How to build your programming skills?](how_to_build_your_programming_skills/README.md)
    * [The Frutris story](how_to_build_your_programming_skills/the_frutris_story.md)
    * [Make some games!](how_to_build_your_programming_skills/make_some_games.md)

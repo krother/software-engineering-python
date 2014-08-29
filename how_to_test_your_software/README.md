@@ -26,3 +26,8 @@ Problem: measuring changes behavior (measuring #bugs --> less bugs reported)
 - test coverage
 - fan-in/fan-out : #types depending on a class
 - cyclomatic complexity : #decisions made in a class/feature
+
+
+
+FIRST
+Source: Brett Schuchert, Tim Ottinger

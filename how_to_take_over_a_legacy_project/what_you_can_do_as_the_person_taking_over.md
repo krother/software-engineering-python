@@ -55,7 +55,7 @@ You can count the number of components you will be directly responsible for:
 |------------|--------|
 | Python, JavaScript, HTML, SQL database, R, C, additional Python sub-projects | 1 each |
 
-For instance, in the Modomics database I was maintaining **thre** components: There was a Python web server (TurboGears), a PostGreSQL database, and lots of HTML code. I did not count the JavaScript components, because they were imported as ready-made scripts that were never modified or even looked at.
+For instance, in the Modomics database I was maintaining **three** components: There was a Python web server (TurboGears), a PostGreSQL database, and lots of HTML code. I did not count the JavaScript components, because they were imported as ready-made scripts that were never modified or even looked at.
 
 ### How many platforms do you support?
 They said Python is platform-independent. That doesn`t mean everything works on any platform automatically. You need to test it. For instance, if your program supports Linux and MacOS, you need to test it on Linux and MacOS. That adds another dimension to complexity:

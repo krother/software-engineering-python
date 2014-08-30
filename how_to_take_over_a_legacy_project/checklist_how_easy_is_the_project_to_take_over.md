@@ -12,12 +12,12 @@ Use the checklist to assess a project your are taking over before you start codi
 - [ ]  Does pylint warn you about unknown variables?
 - [ ]  Do functions and classes have docstrings?
 - [ ]  Are variable names understandable?
-- [ ]  Is the code divided into modules, classes and functions of reasonable size?
+- [ ]  (#modules+classes+functions) / LOC > X
 
 #### Engineering infrastructure
 - [ ]  Is there a repository?
-- [ ]  Are there any automatic tests?
-- [ ]  Can you install/deploy the program by yourself?
+- [ ]  Test coverage > x
+- [ ]  Can you install/deploy the program with a one-line command?
 - [ ]  Is understandable documentation available?
 - [ ]  Is there a backlog or ticket system?
 
@@ -28,12 +28,17 @@ Use the checklist to assess a project your are taking over before you start codi
 - [ ]  Are you going to use the program yourself?
 - [ ]  Do you know all languages / technologies used?
 
+RNAMAP complexity:6 engin:7
+Modomics complexity: 7 engin: 7
+ModeRNA complexity: 7 engin: 11
+Rxncon complexity: 12 engin: 8
+
 ## Using the checklist
 MR: Could be more general not only about complexity.
 
 You can combine the three numbers from the sections above to a single complexity value ranging from 3-16 points. MR: Why 16?
 
-MR: Would be nice to have some comments on how to assign these points. e.g. something like: It means that, if you consider LOC, if you have 100-line script to debug, it will have score 1, if you have code with 30 000 lines that it will be 5, and evrything inbetween is your subjective evaluation of the program size.   
+MR: Would be nice to have some comments on how to assign these points. e.g. something like: It means that, if you consider LOC, if you have 100-line script to debug, it will have score 1, if you have code with 30 000 lines that it will be 5, and everything in between is your subjective evaluation of the program size.
 
     complexity = LOC + components + platforms
 
@@ -41,3 +46,4 @@ Some developers might argue what is the correct formula to combine the three val
 
 What we know is that the comlexity lets you describe the size of the project: 5 is comfortable, 8 is challenging, and 12 means that it probably is going to be tough.
 
+![Engineering points over project complexity](engineering_points.png)

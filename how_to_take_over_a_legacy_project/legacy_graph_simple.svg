@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="legacy_graph_simple.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mstart"
+       style="overflow:visible">
+      <path
+         id="path3783"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path3786"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3780"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3768"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path3765"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3762"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3759"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="87.349541"
+     inkscape:cy="348.22274"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:object-nodes="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect5429"
+       width="590"
+       height="444.28571"
+       x="11.428572"
+       y="293.79074"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641" />
+    <g
+       id="g5353"
+       transform="matrix(0.95255795,0,0,-0.89688025,5.2864005,988.74173)"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641">
+      <rect
+         y="513.79077"
+         x="111.42857"
+         height="137.14285"
+         width="181.42857"
+         id="rect5345"
+         style="fill:#7fff2a;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#ffd42a;fill-opacity:1;stroke:none"
+         id="rect5347"
+         width="181.42857"
+         height="137.14285"
+         x="292.85715"
+         y="513.79077" />
+      <rect
+         y="376.64795"
+         x="292.85715"
+         height="137.14285"
+         width="181.42857"
+         id="rect5349"
+         style="fill:#ff5555;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:#ffd42a;fill-opacity:1;stroke:none"
+         id="rect5351"
+         width="181.42857"
+         height="137.14285"
+         x="111.42857"
+         y="376.64795" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
+       d="m 111.42857,356.6479 0,294.28571 410,0"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5359"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-23.578404,-125.53098)"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641"><flowRegion
+         id="flowRegion5361"><rect
+           id="rect5363"
+           width="158.53551"
+           height="98.571434"
+           x="142.85715"
+           y="560.93359" /></flowRegion><flowPara
+         id="flowPara5365"
+         style="font-size:24px;text-align:center;text-anchor:middle">everything</flowPara><flowPara
+         style="font-size:24px;text-align:center;text-anchor:middle"
+         id="flowPara5367">fine</flowPara></flowRoot>    <flowRoot
+       transform="translate(-37.142857,-8.5714286)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot5369"
+       xml:space="preserve"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641"><flowRegion
+         id="flowRegion5371"><rect
+           y="560.93359"
+           x="142.85715"
+           height="98.571396"
+           width="185.71428"
+           id="rect5373" /></flowRegion><flowPara
+         id="flowPara5377"
+         style="font-size:24px;text-align:center;text-anchor:middle">dirty</flowPara><flowPara
+         style="font-size:24px;text-align:center;text-anchor:middle"
+         id="flowPara3029">work</flowPara><flowPara
+         style="font-size:28px;text-align:center;text-anchor:middle"
+         id="flowPara5397" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5389"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(175.71415,4.1023995)"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641"><flowRegion
+         id="flowRegion5391"><rect
+           id="rect5393"
+           width="185.71428"
+           height="98.571396"
+           x="142.85715"
+           y="560.93359" /></flowRegion><flowPara
+         style="font-size:24px;text-align:start;text-anchor:start"
+         id="flowPara5395">Arrgh!!!</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5399"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(128.00712,-125.53098)"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641"><flowRegion
+         id="flowRegion5401"><rect
+           id="rect5403"
+           width="185.71428"
+           height="98.571396"
+           x="142.85715"
+           y="560.93359" /></flowRegion><flowPara
+         id="flowPara5407"
+         style="font-size:24px;text-align:center;text-anchor:middle">dirty</flowPara><flowPara
+         style="font-size:24px;text-align:center;text-anchor:middle"
+         id="flowPara3031">work</flowPara></flowRoot>    <flowRoot
+       transform="translate(35.149977,95.714286)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot5409"
+       xml:space="preserve"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641"><flowRegion
+         id="flowRegion5411"><rect
+           y="560.93359"
+           x="142.85715"
+           height="44.285698"
+           width="201.42854"
+           id="rect5413" /></flowRegion><flowPara
+         style="font-size:28px;text-align:center;text-anchor:middle;font-weight:bold;-inkscape-font-specification:Sans Bold"
+         id="flowPara5417">complexity</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5421"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="matrix(0,-1,1,0,-496.46268,841.01082)"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/how_to_take_over_a_legacy_project/legacy_graph_simple.png"
+       inkscape:export-xdpi="150.91641"
+       inkscape:export-ydpi="150.91641"><flowRegion
+         id="flowRegion5423"><rect
+           id="rect5425"
+           width="357.14282"
+           height="49.999966"
+           x="142.85715"
+           y="560.93359" /></flowRegion><flowPara
+         id="flowPara5427"
+         style="font-size:24px;font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans Bold">engineering quality</flowPara></flowRoot>  </g>
+</svg>

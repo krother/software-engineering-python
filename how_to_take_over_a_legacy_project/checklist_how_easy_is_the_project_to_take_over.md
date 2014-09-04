@@ -1,49 +1,45 @@
-### Checklist: How easy is the project to take over?
+### The Legacy Metric in real life
+Your Legacy Metric should now consist of:
 
-Use the checklist to assess a project your are taking over before you start coding.
+* A **complexity value** ranging from 0 (simple) to 9 (awfully complicated) .
+* An **engineering quality value** ranging from 0 (messy) to 5 (well-kept).
 
-#### Project complexity
-- [ ]  How many lines of code (LOC) do you have (1+ points)?
-- [ ]  How many separate components (languages, databases etc.) are there (1+ points)?
-- [ ]  How many different platforms will the program be deployed to (1+ points)?
-
-#### Code quality
-- [ ]  Does pylint give an average score of &gt;5.0?
-- [ ]  Does pylint warn you about unknown variables?
-- [ ]  Do functions and classes have docstrings?
-- [ ]  Are variable names understandable?
-- [ ]  (#modules+classes+functions) / LOC > X
-
-#### Engineering infrastructure
-- [ ]  Is there a repository?
-- [ ]  Test coverage > x
-- [ ]  Can you install/deploy the program with a one-line command?
-- [ ]  Is understandable documentation available?
-- [ ]  Is there a backlog or ticket system?
-
-#### People
-- [ ]  Do you have a chance to meet the former developer regularly?
-- [ ]  Are there other developers actively involved?
-- [ ]  Are there users you can talk to on a regular basis?
-- [ ]  Are you going to use the program yourself?
-- [ ]  Do you know all languages / technologies used?
-
-RNAMAP complexity:6 engin:7
-Modomics complexity: 7 engin: 7
-ModeRNA complexity: 7 engin: 11
-Rxncon complexity: 12 engin: 8
-
-## Using the checklist
-MR: Could be more general not only about complexity.
-
-You can combine the three numbers from the sections above to a single complexity value ranging from 3-16 points. MR: Why 16?
-
-MR: Would be nice to have some comments on how to assign these points. e.g. something like: It means that, if you consider LOC, if you have 100-line script to debug, it will have score 1, if you have code with 30 000 lines that it will be 5, and everything in between is your subjective evaluation of the program size.
-
-    complexity = LOC + components + platforms
-
-Some developers might argue what is the correct formula to combine the three values. The actual amount of work required might as well be exponential to the complexity. We don't know for sure.
-
-What we know is that the comlexity lets you describe the size of the project: 5 is comfortable, 8 is challenging, and 12 means that it probably is going to be tough.
+You can use both values as coordinates:
 
 ![Engineering points over project complexity](engineering_points.png)
+
+How can you interpret this graph?
+
+We decided to give you a couple of examples how we would assess the situation.
+
+#### Kristian
+Bio: *Programming since 1988, Python since 1999, has also been in touch with Assembler, BASIC, JAVA, C,  PASCAL. No formal CS education, but lots of practical experience. Loves firefighting.*
+
+#### Magdalena
+Bio: TODO
+
+### The Modomics project
+estimate to the moment it was first handed over in 2007:
+
+**Complexity: 6 points** (2 for LOC, 3 for components, 1 platform)
+**Engineering: 1 points (repository)
+
+**Kristian**: "*As I told, the project was challenging back in 2007. In a project like this, I would not expect anything technically challenging. It is structuring a project like this that makes adding even small features and debugging a daunting task. My approach would be to start with rigorous testing."*
+
+### Twenty Characters
+A small project to draw amino acid sequences with a calligraphic font.
+
+346 LOC
+Python only
+Linux command line only
+--> complexity 1
+
+No repository until writing of this chapter
+No installer script
+Test coverage 31%
+pylint score 6.27
+24 modularization units
+--> quality 2
+
+**Kristian**: *This should be a piece of cake, simply because the program is so small. The code quality is more than sufficient for a quick start.*
+

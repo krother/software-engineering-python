@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="engineering_points.svg">
   <defs
      id="defs4">
     <marker
@@ -52,8 +52,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.71023384"
-     inkscape:cx="497.82657"
-     inkscape:cy="635.16551"
+     inkscape:cx="302.86913"
+     inkscape:cy="447.88341"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -62,7 +62,9 @@
      inkscape:window-height="744"
      inkscape:window-x="65"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -84,8 +86,8 @@
        id="rect4526"
        width="643.45001"
        height="485.75552"
-       x="1.407987"
-       y="234.32175"
+       x="9.8559093"
+       y="242.76967"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
        inkscape:export-xdpi="150.09"
        inkscape:export-ydpi="150.09" />
@@ -93,7 +95,8 @@
        id="g4413"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
        inkscape:export-xdpi="150.09"
-       inkscape:export-ydpi="150.09">
+       inkscape:export-ydpi="150.09"
+       transform="matrix(0.90893996,0,0,-1.1071295,12.213875,1037.5408)">
       <rect
          y="545.94971"
          x="134.12993"
@@ -181,7 +184,7 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="m 134.12993,638.88375 421.23361,0"
+       d="m 134.12993,638.88375 387.73814,0"
        id="path2985"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
@@ -225,9 +228,9 @@
            width="285.40619"
            id="rect4439" /></flowRegion><flowPara
          style="font-size:24px;font-weight:normal;-inkscape-font-specification:Sans"
-         id="flowPara4441">engineering points</flowPara></flowRoot>    <path
+         id="flowPara4441">engineering quality</flowPara></flowRoot>    <path
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 134.12991,453.01569 -14.93191,0"
+       d="m 134.12992,471.60248 -14.93191,0"
        id="path4443"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
@@ -236,14 +239,14 @@
     <path
        inkscape:connector-curvature="0"
        id="path4447"
-       d="m 134.12991,360.08167 -14.93191,0"
+       d="m 134.12993,360.08167 -14.93191,0"
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
        inkscape:export-xdpi="150.09"
        inkscape:export-ydpi="150.09" />
     <path
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 134.12991,545.94971 -14.93191,0"
+       d="m 134.12991,527.36292 -14.93191,0"
        id="path4449"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
@@ -259,7 +262,7 @@
        inkscape:export-ydpi="150.09" />
     <path
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 134.12993,653.81566 0,-14.93191"
+       d="m 168.66449,653.81566 0,-14.93191"
        id="path4453"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
@@ -268,31 +271,15 @@
     <path
        inkscape:connector-curvature="0"
        id="path4455"
-       d="m 227.06395,653.81564 0,-14.93191"
+       d="m 272.43646,653.81564 0,-14.93191"
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
        inkscape:export-xdpi="150.09"
        inkscape:export-ydpi="150.09" />
     <path
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 319.99796,653.81564 0,-14.93191"
+       d="m 376.20847,653.81564 0,-14.93191"
        id="path4457"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
-       inkscape:export-xdpi="150.09"
-       inkscape:export-ydpi="150.09" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4459"
-       d="m 412.93198,653.81564 0,-14.93191"
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
-       inkscape:export-xdpi="150.09"
-       inkscape:export-ydpi="150.09" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 505.866,653.81564 0,-14.93191"
-       id="path4461"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
        inkscape:export-xdpi="150.09"
@@ -308,10 +295,10 @@
            x="203.04066"
            y="657.89758"
            style="font-size:20px" /></flowRegion><flowPara
-         id="flowPara4469"></flowPara></flowRoot>    <text
+         id="flowPara4469" /></flowRoot>    <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="220.34996"
+       x="231.30153"
        y="675.02167"
        id="text4471"
        sodipodi:linespacing="125%"
@@ -320,9 +307,9 @@
        inkscape:export-ydpi="150.09"><tspan
          sodipodi:role="line"
          id="tspan4473"
-         x="220.34996"
+         x="231.30153"
          y="675.02167"
-         style="font-size:20px">4</tspan></text>
+         style="font-size:20px">3</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4475"
@@ -341,7 +328,7 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="313.98111"
+       x="334.88864"
        y="675.02167"
        id="text4479"
        sodipodi:linespacing="125%"
@@ -350,14 +337,14 @@
        inkscape:export-ydpi="150.09"><tspan
          sodipodi:role="line"
          id="tspan4481"
-         x="313.98111"
+         x="334.88864"
          y="675.02167"
-         style="font-size:20px">8</tspan></text>
+         style="font-size:20px">6</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4483"
        y="675.02167"
-       x="400.57233"
+       x="438.90283"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
@@ -365,24 +352,9 @@
        inkscape:export-ydpi="150.09"><tspan
          style="font-size:20px"
          y="675.02167"
-         x="400.57233"
+         x="438.90283"
          id="tspan4485"
-         sodipodi:role="line">12</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="492.09146"
-       y="675.02167"
-       id="text4487"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
-       inkscape:export-xdpi="150.09"
-       inkscape:export-ydpi="150.09"><tspan
-         sodipodi:role="line"
-         id="tspan4489"
-         x="492.09146"
-         y="675.02167"
-         style="font-size:20px">16</tspan></text>
+         sodipodi:role="line">9</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -401,7 +373,7 @@
     <text
        sodipodi:linespacing="125%"
        id="text4495"
-       y="553.23077"
+       y="532.11096"
        x="103.48705"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
@@ -409,25 +381,25 @@
        inkscape:export-xdpi="150.09"
        inkscape:export-ydpi="150.09"><tspan
          style="font-size:20px"
-         y="553.23077"
+         y="532.11096"
          x="103.48705"
          id="tspan4497"
-         sodipodi:role="line">5</tspan></text>
+         sodipodi:role="line">2</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4499"
-       y="459.59964"
-       x="116.26873"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       y="419.20993"
+       x="114.71062"
+       style="font-size:34.69934464px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
        inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
        inkscape:export-xdpi="150.09"
        inkscape:export-ydpi="150.09"><tspan
-         style="font-size:20px;text-align:end;text-anchor:end"
-         y="459.59964"
-         x="116.26873"
+         style="font-size:17.34967232px;text-align:end;text-anchor:end"
+         y="419.20993"
+         x="114.71062"
          id="tspan4501"
-         sodipodi:role="line">10</tspan></text>
+         sodipodi:role="line">4</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -442,6 +414,108 @@
          id="tspan4505"
          x="116.26873"
          y="366.67249"
-         style="font-size:20px;text-align:end;text-anchor:end">15</tspan></text>
+         style="font-size:20px;text-align:end;text-anchor:end">5</tspan></text>
+    <path
+       inkscape:export-ydpi="150.09"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       inkscape:connector-curvature="0"
+       id="path3043"
+       d="m 134.12993,415.84204 -14.93191,0"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       inkscape:export-ydpi="150.09"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       xml:space="preserve"
+       style="font-size:43.48619843px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="116.11896"
+       y="475.01669"
+       id="text3045"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3047"
+         x="116.11896"
+         y="475.01669"
+         style="font-size:21.74309921px;text-align:end;text-anchor:end">3</tspan></text>
+    <path
+       inkscape:export-ydpi="150.09"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       inkscape:connector-curvature="0"
+       id="path3051"
+       d="m 134.12991,583.12332 -14.93191,0"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       inkscape:export-ydpi="150.09"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="103.48705"
+       y="587.36658"
+       id="text3053"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3055"
+         x="103.48705"
+         y="587.36658"
+         style="font-size:20px">1</tspan></text>
+    <path
+       inkscape:export-ydpi="150.09"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 203.25516,653.81564 0,-14.93191"
+       id="path3057"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3059"
+       d="m 237.84581,653.81564 0,-14.93191"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-ydpi="150.09" />
+    <path
+       inkscape:export-ydpi="150.09"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 307.02716,653.81564 0,-14.93191"
+       id="path3061"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3065"
+       d="m 341.6178,653.81564 0,-14.93191"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-ydpi="150.09" />
+    <path
+       inkscape:export-ydpi="150.09"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 410.79913,653.81564 0,-14.93191"
+       id="path3067"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3069"
+       d="m 445.3898,653.81564 0,-14.93191"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-ydpi="150.09" />
+    <path
+       inkscape:export-ydpi="150.09"
+       inkscape:export-xdpi="150.09"
+       inkscape:export-filename="/home/krother/Desktop/Software_Engineering_for_Scientists/engineering_points.png"
+       inkscape:connector-curvature="0"
+       id="path3071"
+       d="m 134.07382,653.81566 0,-14.93191"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>

@@ -1,6 +1,6 @@
 # The Modomics story
 
-In March 2007 I inherited the [Modomics database](http://www.genesilico.pl/modomics) from Staszek, a MSc student in the lab. Staszek handed me the code and the server passwords. Then he moved to Germany. Although he did whatever he could to support me by email, a sackful of knowledge moved away with him.
+In March 2007 I inherited the [Modomics database](http://www.genesilico.pl/modomics) from Staszek, a MSc student in the lab. Staszek handed me the code and the server passwords. Then he moved to another country, 1300 km away. Although he did whatever he could to support me by email, a sackful of knowledge moved away with him.
 
 ![Modomics](modomics.jpg)
 
@@ -8,7 +8,7 @@ There was a hard deadline for publication in June. In May, the hard disk of the 
 
 Working on the code was tough: *"What does this mean? How does this work? Why is this character on the web page three positions further to the left than it should?"*
 
-When the deadline drew near, I worked literally every minute until the very last moment, including late evenings and weekends. I was constantly overslept and emotionally brittle to the point of resignation. It took me a year to realize the correct term for this: burnout.
+When the deadline drew near, I worked literally every minute until the very last moment, including late evenings and weekends. I was constantly sleepy and emotionally brittle to the point of resignation. It took me a year to realize the correct term for this: burnout.
 
 I missed the deadline, or to be precise, my supervisor hit the **STOP** button. An extra year was the best thing that could happen to the project and its maintainer. First of all, I relaxed. Second, I spent more time talking to scientists using the website and understood what they needed better. I cleaned up many big and small issues and introduced a better structure of Python modules. In the end, I had rewritten most of the code. The site was working, the publication got accepted.
 

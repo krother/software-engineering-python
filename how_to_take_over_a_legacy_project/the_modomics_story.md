@@ -16,16 +16,3 @@ Finally, after two more years, it was time to hand over the project to my succes
 
 What I learned is that taking over a program from someone is difficult.
 
-### Modomics: Project Overview
-
-| Name | Modomics |
-|------|----------|
-| Summary | Web database of modified RNA nucleotides. |
-| Duration | 2006 - 2014 |
-| Developers | 2 coders (2009) |
-| Stakeholders | 2 senior scientists, 4 data curators (2009) |
-| Size | ~10000 Python LOC |
-| Technologies used | TurboGears web server <br> PostGreSQL database <br> Biopython <br> PIL |
-| Development tools used | bug tracker (TRAC) <br> automatic tests (partial) <br> SVN repository <br> User Stories <br> Entity-relationship diagram |
-| Publications | Machnicka MA, Milanowska K, Osman Oglu O, Purta E, Kurkowska M, Olchowik A, Januszewski W, Kalinowski S, Dunin-Horkawicz S, Rother KM, Helm M, Bujnicki JM, Grosjean H. MODOMICS: a database of RNA modification pathways: 2012 update. Nucleic Acids Res 2013 Jan 1;41(D1): D262-D267<br><br>Czerwoniec A, Dunin-Horkawicz S, Purta E, Kaminska KH, Kasprzak J, Bujnicki JM, Grosjean H, Rother K. MODOMICS: a database of RNA modification pathways. 2008 update. Nucleic Acids Res 2009 Jan;37(Database issue):D118-21. [Epub 2008 Oct 14]<br><br>Dunin-Horkawicz S, Czerwoniec A, Gajda MJ, Feder M, Grosjean H, Bujnicki JM. MODOMICS: a database of RNA modification pathways. Nucleic Acids Res. 2006 Jan 1;34(Database issue):D145-9. |
-

@@ -1,4 +1,4 @@
-# Consequences
+# What you can do when you take over a project
 
 Once you figured out what situation you got yourself into, you probably want to get to work. What can you do to get a firm hold on the code you inherited? Here you find a few options.
 

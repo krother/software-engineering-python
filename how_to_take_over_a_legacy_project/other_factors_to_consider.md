@@ -1,6 +1,6 @@
 ### Other factors to consider
 
-There are several aspects of a project the Legacy Metric does not cover. We found two more aspects hard to assess objectively. At least, we would like to give you questions:
+There are several aspects of a project the metric introduced above does not cover. We found two more aspects hard to assess objectively. At least, we would like to give you questions:
 
 #### Documentation
 Questions you can ask include:

@@ -12,6 +12,6 @@ Intuitively, you would expect the according graph to look like this:
 In this section, we want to add more detail and more precision to this graph.
 
 ### The Legacy Metric
-Below, we introduce one simple metric to assess a legacy project. The purpose of the Legacy Metric is to give you a quick estimate of the situation. It does not represent a detailed analysis of a project.
+Below, we introduce one simple metric that helps you to locate a legacy project in the graph. The purpose of the Legacy Metric is to give you a quick estimate of the situation. It does not give you a detailed analysis of a project.
 
-We chose few but rigorous, objective criteria for each dimension, so that you can arrive at the same (or similar) result as someone you are working with. We will use the **legacy metric** to relate our own experience to a reproducible number.
+We chose few but rigorous, objective criteria for each dimension, so that you can arrive at the same (or similar) result as someone you are working with.

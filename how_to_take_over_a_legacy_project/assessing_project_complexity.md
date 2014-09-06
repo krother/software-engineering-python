@@ -23,7 +23,7 @@ To identify unique lines, try:
 
 Empty lines, docstrings and comments are counted, too, as they are part of the source code.
 
-For instance, in the ModeRNA project, we found 154 Python files with 27000 lines, of which 16000 were unique (as of August 28th in the master branch on Github).
+For instance, in the ModeRNA project (https://github.com/lenarother/moderna), we found 154 Python files with 27000 lines, of which 16000 were unique (as of August 28th in the master branch on Github).
 
 #### What the LOC number tells you?
 The LOC number helps you to compare programs to each other. For our complexity metric, we assign a rough size in points using a logarithmic scale:

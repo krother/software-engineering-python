@@ -96,6 +96,13 @@ Inspecting the coverage for the modules for your program allows you to check the
 Python has a standard style guide for code, known as [PEP8](https://www.python.org/dev/peps/pep-0008). Adhering to PEP8 is good, because it makes your code readable for others. It also helps you to write in a consistent style. Think of PEP8 as your font, if the text is your code.
 
 #### pylint
+
+**MR:** as there is Modomics as an example, should there be any comment on webframeworks, does it work with Django?
+
+**MR:** In some places moderna appears - check again if we can replace it with modomics.
+
+**MR:** Here is pylint modomics but afterword moderna files are used. ~2 pople apart from as will know the difference. Does it matter?
+
 The **pylint** tool checks whether your code conforms to the PEP8 coding guidelines. pylint gives you a ballpark figure how good or bad the code is. You can use it to analyze any Python file:
 
     pylint modomics.py
@@ -139,6 +146,8 @@ At the top of the output, you find a section with warning messages. Each warning
     R: 19,0:Renumerator: Too many public methods (30/20)
 
 These warnings point you to the following issues:
+
+MR: Not all are mensioned (below are more)
 
 #### Bugs and dead code
 

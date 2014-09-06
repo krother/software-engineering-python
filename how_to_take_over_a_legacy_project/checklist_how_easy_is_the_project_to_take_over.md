@@ -15,9 +15,9 @@ You can use the diagram in two ways:
 1. **Locate yourself**: Check where your past projects would locate. If you come across a legacy project that is considerably more challenging than what you did before, this gives you a warning.
 2. **Check other projects**: Look at a few programs you are using and check where they would locate in the graph. This gives exercise will give you a better feeling for code not written by yourself. The day you take over a project you will be prepared.
 
-We would like to add a practical example:
 
-### The Modomics project
+
+### Practical example: The Modomics project
 
 As told in the beginning, the Modomics project was challenging back in 2007. Although I found none of the technical tasks particularly difficult, the number of unknown things accumulated. There was a good general structure, but in the details I frequently found myself tracing Python & HTML code line by line. As a result, adding even small features and debugging became a daunting task.
 

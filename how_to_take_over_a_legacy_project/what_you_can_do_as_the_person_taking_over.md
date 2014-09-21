@@ -1,6 +1,6 @@
 ## Assessing a legacy project
 
-When you take over a project, there are two aspects to consider before you decide what to do:
+When you take over a project, you need to find out first what you got yourself into. There are two aspects to consider before you can decide what to do:
 
 1. How complex is the project?
 2. How well-engineered is the code?
@@ -9,9 +9,6 @@ Intuitively, you would expect the according graph to look like this:
 
 ![Simple assessment graph](legacy_graph_simple.png)
 
-In this section, we want to add more detail and more precision to this graph.
+In this section, you will find a method to locate your project in this graph. We introduce a simple metric for complexity and engineering quality. The purpose of the metric is to give you a rough assessment quickly.
 
-### The Legacy Metric
-Below, we introduce one simple metric that helps you to locate a legacy project in the graph. The purpose of the Legacy Metric is to give you a quick estimate of the situation. It does not give you a detailed analysis of a project.
-
-We chose few but rigorous, objective criteria for each dimension, so that you can arrive at the same (or similar) result as someone you are working with.
+We chose few but rigorous, objective criteria for both complexity and engineering quality, that you can use to compare a legacy project to projects you are already familiar with.

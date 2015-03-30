@@ -1,11 +1,20 @@
 # Summary
 
 * [Scientific Software Engineering in Python](README.md)
+* [Process & Planning](chapters/process.md)
+  * [How to create meaningful software?](chapters/creating_meaningful_software.md)   
+* [How to set up Your Coding Environment?](chapters/environment.md)
+  * [Directory structure of a Python project](chapters/directory_structure.md)
+  * [Managing multiple Python environments with virtualenv](chapters/using_virtualenv.md)
+* [How to structure Your Software?](chapters/design.md)
+  * [How to analyze an architecture with CRC cards?](chapters/crc_cards.md)
+* [How to write good Code?](chapters/goodcode.md)
+  * [Analyzing code quality with pylint](analyzing_code_quality_with_pylint.md)
+* [How to reach Your Peers?](chapters/peers.md)
+  * [How to recognize good scientific software?](chapters/how_to_recognize_good_software.md)
 * [How to take over a legacy project?](how_to_take_over_a_legacy_project/README.md)
    * [Problems with legacy code](how_to_take_over_a_legacy_project/problems_with_legacy_code.md)
    * [Assessing a legacy project](how_to_take_over_a_legacy_project/what_you_can_do_as_the_person_taking_over.md)
        * [How complex is the project?](how_to_take_over_a_legacy_project/assessing_project_complexity.md)
        * [How well-engineered is the code?](how_to_take_over_a_legacy_project/assessing_engineering_quality.md)
-   * [Using the Legacy Metric](how_to_take_over_a_legacy_project/checklist_how_easy_is_the_project_to_take_over.md)
    * [What you can do when you take over a project](how_to_take_over_a_legacy_project/consequences.md)
-

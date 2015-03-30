@@ -1,5 +1,5 @@
 
-# Structure of a Python project
+# Directory structure of a Python project
 
 ## Problems solved
 - separate data and code

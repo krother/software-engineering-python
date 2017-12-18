@@ -14,7 +14,7 @@ of dots while a bunch of ghosts is chasing you. The game is implemented with a s
 class for the ghosts in a code module called pac_sprites. The CRC card describes what
 the Ghost class is responsible for and what it needs to do its job.
 
-![CRC Card](crc.png)
+![CRC Card](<crc.png>)
 
 On top of the CRC card there is the full class name: pac_sprites.Ghost.
 

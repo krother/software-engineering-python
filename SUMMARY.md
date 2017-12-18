@@ -4,7 +4,7 @@
 * [Process & Planning](chapters/process.md)
   * [How to create meaningful software?](chapters/creating_meaningful_software.md)   
 * [How to set up Your Coding Environment?](chapters/environment.md)
-  * [Directory structure of a Python project](chapters/directory_structure.md)
+  * [How to structure directories in a Python project?](chapters/directory_structure.md)
   * [Managing multiple Python environments with virtualenv](chapters/using_virtualenv.md)
 * [How to structure Your Software?](chapters/design.md)
   * [How to analyze an architecture with CRC cards?](chapters/crc_cards.md)

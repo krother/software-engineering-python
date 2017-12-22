@@ -34,63 +34,81 @@ Unter Ubuntu Linux ist `git` sehr leicht zu installieren:
 
 Es gibt mehrere [graphische Oberflächen](https://book.git-scm.com/downloads/guis) für `git`. Diese sind aus meiner Sicht aber nicht unbedingt notwendig.
 
-## Aufgaben
+## Aufgabe: Veröffentliche Dein Programm auf GitHub
 
-### 1. Erstelle ein Repository
+### 1. Erstelle ein GitHub-Projekt
 
-* Erstelle ein leeres Verzeichnis für Dein Projekt
-* Öffne ein Windows-Terminal (`cmd` im Startmenü eingeben)
-* Wechsle in das Verzeichnis (mit `cd VERZEICHNISNAME`)
-* Gib ein `git init`
+* Lege Dir ein Konto auf [**GitHub**](https://github.com/) an.
+* Erstelle dort ein neues Repository.
+* Gib dem Repository einen Namen und eine Beschreibung.
+* Erstelle auch eine `README.md`-Datei (*optional*).
+* Wähle die MIT-Lizenz aus (*optional*).
 
-### 2. Dateien hinzufügen
+### 2. Erstelle eine lokale Arbeitskopie
 
-Nun speichern wir Quelltext im 
+* Gehe auf die Startseite Deines GitHub-Projekts.
+* Finde den Knopf **Clone or download** (grün).
+* Drücke darauf. Kopiere die URL des Projekts.
+* Öffne ein Terminal (Eingabeaufforderung; `cmd` im Startmenü eingeben)
+* Wechsle in das Verzeichnis, an dem das Projekt liegen soll (z.B. Desktop)
+* Gib ein `git clone URL`, wobei Du hier die kopierte URL einfügst.
+* Es sollte ein neues Verzeichnis mit Deinem Projekt entstehen.
 
-* Schreibe ein **Hello World**-Programm im Projektverzeichnis
+### 3. Dateien hinzufügen
+
+* Kopiere die Dateien für Dein Projekts in das neue Verzeichnis.
 * Gib `git status` ein.
 * Füge eine Datei mit `git add DATEINAME` hinzu.
 * Gib `git status` ein.
-* Speichere die Änderungen im Repository mit `git commit`
+* Speichere die Änderungen mit `git commit -m "Logbucheintrag"`
 * Gib `git status` ein.
+* Du kannst mit `git add *.py` oder `git add *.cpp` auch mehrere Dateien hinzufügen. **Füge zunächst nur den Quelltext und wichtige Medien hinzu.**
 
-### 3. Änderungen hinzufügen
+#### Achtung:
 
-* Ändere den Quelltext Deines Programms
-* Gib `git status` ein.
-* Gib `git diff DATEINAME` ein.
-* Füge die Änderungen mit `git add` und `git commit` wie oben hinzu.
-* Zeige mit `git log` die Geschichte des Projekts an.
+Falls Du bei `git commit` das `-m` vergisst und in einem komischen Editor landest, kannst Du diesen mit `ESCAPE` und `:q!` wieder verlassen.
 
 ### 4. Dateien ignorieren
 
-Automatisch generierte Dateien haben in der Regel im Repository nichts zu suchen. `git` soll diese ignorieren.
+Einige Dateien haben im Repository nichts zu suchen: *Verzeichnisse wie `Debug/`, `__pycache__`, `.exe`-Dateien, Layout-Dateien* und viele mehr. Hier weist Du `git` an, diese zu ignorieren.
 
-* Erstelle im Texteditor die Datei `.gitignore` im Projektverzeichnis
-* Schreibe den Namen einer compilierten oder anderen automatisch generierten Datei in  `.gitignore` (ein Dateiname pro Zeile).
-* Du kannst auch mit dem Eintrag `VERZEICHNISNAME/*` ein Verzeichnis komplett ignorieren lassen.
-* Füge `.gitignore` dem Repository hinzu.
+* Suche Dir auf [https://github.com/github/gitignore](https://github.com/github/gitignore) eine passende Datei für Deine Programmiersprache.
+* Speichere den Inhalt im Projektverzeichnis in einer Datei namens `.gitignore`.
+* Füge die Änderungen mit `git add` und `git commit` wie oben hinzu.
+* In die Datei `.gitignore` kannst Du auch von Hand Namen Dateien und Verzeichnissen eintraegen (ein Dateiname pro Zeile).
 
-### 5. GitHub
 
-Nun veröffentlichen wir unser Projekt.
+### 5. Änderungen veröffentlichen
 
-* Lege Dir ein Konto auf [GitHub](https://github.com/) an.
-* Erstelle dort ein neues Repository.
-* Folge den Anweisungen auf dem Bildschirm, um das existierende Repository im Netz zu veröffenlichen.
-* Erstelle eine `README.md`-Datei mit grundsätzlichen Infos zum Projekt.
-* Wähle eine Lizenz für Dein Programm aus.
-* Weitere Änderungen kannst Du mit `git push` veröffentlichen.
+Nun kannst Du alle Änderungen veröffentlichen.
+
+* Prüfe, ob sich im Projekt urheberrechtlich geschütztes Material befindet.
+* Ergänze eventuelle Lizenzbestimmungen oder Namensnennungen in der README-Datei.
+* Mit `git rm DATEINAME` kannst Du Dateien ohne Nutzungsrechte löschen. 
+* Gib in der Kommandozeile `git push` ein.
+* Beim ersten Mal wünscht sich `git`, dass Du Name und E-Mail angibst. Dazu werden zwei Befehle mit `git config ..` angezeigt. Kopiere diese und passe sie an.
+* Versuche `git push` erneut.
+* Aktualisiere die Webseite des Projekts. Du solltest dort die neuen Dateien sehen.
+
+### 6. Zeitreisen
+
+* Zeige mit `git log` die Geschichte des Projekts an.
+* Jeder Eintrag hat einen Buchstabencode, z.B. `276fde136c067c5c622ec03ea1b0b..`
+* Mit `git checkout CODE` kannst Du zu früheren Revisionen springen.
+* Mit `git checkout master` kommst Du wieder in die Gegenwart.
+
 
 ### 6. Kollaboration
 
-Entwickelt ein Projekt im Zweierteam weiter.
+Entwickelt Euer Projekt im Zweierteam weiter.
 
-* Füge einen zweiten Contributor zu Deinem Projekt hinzu.
+* Füge auf der Webseite einen zweiten Autor (*Collaborator*) hinzu.
 * Mit `git clone URL` kann dieser sich eine Kopie des Projekts besorgen.
-* Mit `git pull` könnt Ihr beide die aktuellste Version anfordern und so den Code der anderen Contributors erhalten.
-* Versucht beide, unterschiedliche Dateien zu editieren die Änderungen ins Repository zu übertragen. Was passiert?
-* Versucht beide, die gleiche Datei parallel zu ändern und diese Änderungen ins Repository zu übertragen. Was passiert?
+* Wenn Ihr Dateien ändert, müßt Ihr die Änderungen jedes Mal mit `git add` und `git commit` einchecken.
+* Mit `git pull` könnt Ihr beide die aktuellste Version des Codes anfordern.
+* Verwende stets `git pull` unmittelbar vor `git pull`.
+* Mit `git push` könnt Ihr beide die Änderungen veröffentlichen.
+* Falls Ihr beide die gleiche Stelle in der gleichen Datei ändert, meldet `git` einen Konflikt. Diesen müßt Ihr von Hand auflösen, bevor Ihr `git add/commit` verwendet. 
 
 
 ## Links

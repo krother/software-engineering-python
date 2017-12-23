@@ -36,25 +36,3 @@ constant pressure to adapt. software evolves.
 
 There will be change.
 
-AGILE: Your job as a project leader is to acccelerate this circle.
-To make software evolve faster.
-
-II.
-How to write code in this uncertainty without everything falling apart?
-
-We have learned the lesson the hard way.
-
-USERS: Software developers face one big question:
-who needs your program?
-- you need it for your research? Clear but keep it for youself.
-- Someone else? Try to find out!
-
-
-Reelease early, release often.
-
-### Make your wheels turn
-* There are no finished programs
-* Software evolves – make it evolve faster.
-* Expect change from users, bosses, reviewers .. and yourself.
-* Speed up your cycle.
-* Apply changes to existing projects slowly.

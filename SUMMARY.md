@@ -8,7 +8,7 @@
   * [Planen](chapters/planen.md)
   * [Versionskontrolle](chapters/versionskontrolle.md)
   * [Automatische Tests](chapters/tests.md)
-  * [Refaktorisieren](refactoring/refaktorisieren.md)
+  * [Refaktorisieren](chapters/refaktorisieren.md)
   * [Codeanalyse](chapters/codeanalyse.md)
   * [Projektkonfiguration](chapters/projektkonfiguration.md)
   * [Releases erstellen](releases/releases.md)

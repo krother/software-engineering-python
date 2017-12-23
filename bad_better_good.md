@@ -1,6 +1,5 @@
 
-# Best Practices
-
+# Best Practices Overview
 
 | topic | worst practice | better practice | good practice |
 |-------|----------------|-----------------|-------------------|

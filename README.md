@@ -1,8 +1,10 @@
-### Scientific Software Engineering in Python
+
+# Engineering Scientific Software in Python
 
 *Kristian Rother & Magdalena Rother*
 
 #### What this book is about
+
 We are two software engineers who have worked as software developers in bioinformatics for 12 and 7 years. We decided to write down our experience resulting from many Python projects in life science.
 
 We assume you know Python, but would like to know how to develop better programs. Programs that get the job done and don't fall apart. To write such programs, Software Engineering is useful. Software engineering is a set of best practices not only for writing code, but keeping a software as a whole healthy.

@@ -1,4 +1,24 @@
-## How well-engineered is the code
+
+# Code Metrics
+
+## How much code is there?
+
+In a small project, you can simply roll up your sleeves and start fixing things. In a big project, however, you need to keep an overview what parts of a project local changes might affect. 
+
+More code means more work. The amount of code gives you a ballpark figure of how much you need to read and understand before getting to work.
+
+You can count the total number of files on Unix:
+
+    find . -name "*.py" | wc -l
+
+A common measure is the number of **lines of code (LOC)**. The following command gives you the total number of LOC for all Python files in a Python directory tree:
+
+    find . -name "*.py" | xargs wc -l
+
+Empty lines, docstrings and comments are counted, too, as they are part of the source code.
+
+
+## Assessing engineering quality
 
 Here we examine, how easy it is to work with the code. In our experience five criteria are good indicators of solid engineering:
 
@@ -22,8 +42,6 @@ Questions you can ask include:
 
 Starting with a version control system in place from the very beginning will save you a lot of pain. All version control systems (SVN, Mercurial, git, etc.) allow you to check the first criterion:
 
-- [ ] **Tick this box, if you have the possibility to inspect at least five earlier versions of the code.**
-
 ### 2. Automatic installation / deployment
 If you have a tool that releases the software on-the-fly, you can start building improved versions on day one. Build tools accelerate your development speed tremendously.
 
@@ -33,28 +51,7 @@ Questions you can ask include:
 * Can you set up a dedicated environment for development?
 * Does the program have features that would only work in production (e.g. on one specific server)?
 
-The following qualify as one-line installers:
-
-Using distutils:
-
-    python setup.py install
-
-Using pip:
-
-    sudo pip install genesilico-modomics
-
-Using Ubuntu:
-
-    sudo apt-get install genesilico-modomics
-
-Using Docker:
-
-    sudo docker run -d -P genesilico/modomics python modomics/manage.py runserver
-
-We emphasize one-line installers, also for setting up servers and virtual machines. All one-line installers allow you to check the second criterion:
-
-- [ ] tick this box if you can build/install the program on your computer with a single command.
-
+We emphasize one-line installers, also for setting up servers and virtual machines.
 
 ### 3. Automatic tests
 Ideally, you should be able to reproduce previous research results before producing your own. How can you verify that the program is working? Automatic tests help you do that quickly.
@@ -68,33 +65,9 @@ Questions you can ask include:
 
 To assess the quality of tests, we will have a closer look at test coverage.
 
-#### Test coverage
-If you have an automatic test suite, you can check what portions of the code they actually test. In Python, the **coverage** tool allows you to do that:
-
-    coverage run setup.py test
-
-or
-
-    coverage run test_all.py
-
-Afterwards, you can inspect a textual summary:
-
-    coverage report
-
-The HTML coverage report helps you to find problematic areas:
-
-    coverage html
-    firefox htmlcov/index.html &
-
-Of course, the higher the test coverage, the better. However, you don't need to aim for 100% coverage - if a program changes frequently that might impede development. In our experience, you can start working reasonably with tests above 50% coverage already.
-
-Inspecting the coverage for the modules of your program allows you to check the third criterion:
-
-- [ ] tick this box if the average test coverage of your program is greater than or equal 50%.
-
 
 ### 4. Code modularization
-For the fifth criterion we will analyze, whether your legacy code is neatly organized or whether all code is in a single function.
+Now we will analyze, whether your legacy code is neatly organized or whether all code is in a single function.
 
 #### Calculating lines per structural unit
 Here we will analyze modularization by counting how many lines of code there are per unit of modularization. Python gives you a lot of freedom to choose how you modularize code. This is why we will treat packages, modules, classes and functions equivalently.
@@ -137,6 +110,20 @@ Now you are ready to calculate the **lines per structural unit**. Divide the num
 
 In our experience, a value below 20 LOC / mod indicates a good program structure. With that said, you are ready to check the fifth and final criterion:
 
-- [ ] tick this box if there are less than or equal 20 lines per structural unit.
 
-To complete the metric, count the number of ticked boxes (from 0 to 5).
+
+### Documentation
+Questions you can ask include:
+* Is understandable documentation available?
+* Is the documentation up-to-date?
+* Does the documentation contain code examples?
+* Can the code examples be checked automatically (doctests)?
+
+### Backlog and ticket systems
+Questions you can ask include:
+* How are tasks in the project tracked?
+* Is there a backlog, a ticket system or a bug tracker?
+* How old are the last entries?
+* Are the entries meaningful and understandable?
+* Is there an analog system for tasks and bugs (whiteboard, pin board, notebook). This is an alternative to electronic systems.
+

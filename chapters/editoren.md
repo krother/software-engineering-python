@@ -1,5 +1,5 @@
 
-# Editoren
+# Editoren für Python
 
 | Editor | Hauptvorteil |
 | IDLE | Konsole, einfach zu installieren |

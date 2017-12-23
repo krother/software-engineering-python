@@ -1,4 +1,4 @@
-# What do you mean by 'done'?
+# The Definition of 'done'?
 
 Have you encountered the following situation in a programming project? The project is divided into tasks, the tasks are placed in an electronic tracking system or as cards on a task board. After some time, programmers declare they are finished: Some come up with a basic solution very quickly and prefer to take care of special cases and cleanup work later. Others invest a lot of time into building a solid, maintainable structure. The former carries the risk that problems get swept under the rug and technical debt is accumulating, the latter that tasks linger in a half-done state forever. Moreover, your team may disagree to what extent a task needs to be implemented to count as “done”. How can you as a project manager know what your team means by “done”?
 

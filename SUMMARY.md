@@ -6,7 +6,6 @@
   * [Code schreiben](chapters/code_schreiben.md)
   * [Debuggen](chapters/debugging.md)
   * [Planen](chapters/planen.md)
-  * [Versionskontrolle](chapters/versionskontrolle.md)
   * [Automatische Tests](chapters/tests.md)
   * [Refaktorisieren](chapters/refaktorisieren.md)
   * [Codeanalyse](chapters/codeanalyse.md)

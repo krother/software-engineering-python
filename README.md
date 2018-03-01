@@ -16,7 +16,5 @@ We are curious to hear what other topics you would like to read about. You can r
 * [krother@academis.eu](krother@academis.eu)
 * [magdalena.rother@gmail.com](magdalena.rother@gmail.com)
 
-You can subscribe to updates of this book on [gitbook.io](https://www.gitbook.io/book/krother/scientific-software-engineering-in-python)
-
 #### License
 This text is released under the conditions of the Creative Commons Attribution Share-alike License 4.0.

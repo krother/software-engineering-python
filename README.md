@@ -20,8 +20,48 @@ To write such programs, there are established best practices that allow you to d
 
 We just want to help you to get things done quickly.
 
+## Contents
 
-### Contact
+* [Best Practices Overview](best_practices.md)
+
+### Programming
+
+* [Editors](editors.md)
+* [Writing code](writing_code.md)
+* [How to structure programs?](structuring_programs.md)
+* [How to structure classes and modules?](structure_classes_modules.md)
+* [Refactoring](refactoring.md)
+
+### Quality
+
+* [Debugging](debugging.md)
+* [Code Style](coding_style.md)
+* [Code Reviews](code_reviews.md)
+* [Testing](testing.md)
+* [Documentation](documenting.md)
+
+### Infrastructure
+
+* [Version Control](version_control.md)
+* [Managing required packages](pip.md)
+* [Virtual Environments](virtualenv.md)
+* [Project Templates](project_templates.md)
+* [Building Python packages](releases.md)
+* [Continuous Integration](continuous_integration.md)
+
+### Projects
+
+* [Project Management](project_management.md)
+* [User Stories](user_stories.md)
+* [Technical Debt](tech_debt.md)
+* [How to work with legacy code?](legacy_code.md)
+* [How to recognize good scientific software?](good_software.md)
+* [How to create meaningful software?](creating_meaningful_software.md)   
+* [How to make software citable?](citable_code.md)
+* [Links](links.md)
+
+
+## Contact
 
 We are two software engineers who decided to write down our experience resulting from many Python projects in life science, web development and teaching.
 

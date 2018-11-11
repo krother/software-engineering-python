@@ -1,4 +1,4 @@
-# How to take over a legacy project?
+# How to work with legacy code?
 
 ## In this chapter you can learn:
 
@@ -116,3 +116,10 @@ Then, choose the ideas most relevant for the project vision, discard the others 
 How many of the main parameters of the project will change the moment you take over? Things that could change include the team composition, project size, goals, features and platforms. Ideally only one parameter should be changed at a time.
 
 The moment you take over as main developer, the team composition changes in any case. That means, nothing else should change. Spend some time making yourself comfortable with the code, working on small issues. You may allocate a week or more to learn a technology crucial to the project which you don't know yet. Don't start revolutions on day one. When you feel the code has become *yours*, it is time to enter the next development stage.
+
+## Things that help
+
+* give an incoming programmer authority to change everything.
+* give an outgoing programmer an incentive to contribute (publications, open-source)
+* encourage other people to take side roles in the project early. --> you have a backup, they have a side project, and the main dev is forced to explain his code to someone else
+* Change one parameter at a time (Vision, Features, Platform, Developers)

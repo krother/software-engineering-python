@@ -92,3 +92,6 @@ Open source code metrics projects
 
     Pyntch is a static code analyzer that attempts to detect runtime errors. It does not perform code style checking.
 
+# Codeanalyse
+
+Einige Tools prüfen Programmcode auf stilistische Schwächen und verhindern dadurch oft Fehler. Wichtige Tools dazu in Python sind `pylint`, `mypy` und `isort`.

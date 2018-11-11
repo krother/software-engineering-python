@@ -24,3 +24,36 @@
 * [How to take over a legacy project?](chapters/legacy_code.md)
 * [How to recognize good scientific software?](chapters/how_to_recognize_good_software.md)
 * [How to create meaningful software?](chapters/creating_meaningful_software.md)   
+
+
+code_metrics.md
+good_software.md
+legacy_code.md
+notes.md
+testing.md
+user_stories.md
+
+editors.md
+writing_code.md
+pip.md
+debugging.md
+  bug_checklists.md
+  introspection.md
+virtualenv.md
+refaktoring.md
+code_reviews.md
+coding_style.md
+pylint.md
+project_templates.md
+documenting.md
+structuring_programs.md
+  structure_classes_modules.md
+  crc_cards.md
+project_management.md
+  uncertainty.md
+  hints_for_supervisors.md
+  tech_debt.md
+  creating_meaningful_software.md
+how_to_recognize_good_software.md
+citable_code.md
+links.md

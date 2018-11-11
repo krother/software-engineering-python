@@ -53,3 +53,18 @@ That said, Gitbook is a great way to publish free technical documentation and tr
 ## Conclusion
 
 Which of these tools is best depends a lot on who you are writing for, what kind of documentation you are writing (tutorial, full reference, cookbook or all three combined), and what it will be read with. In any case, you have a lot of options to cover some of the white space between the README file and a 100-page manual.
+# How to document your software?
+
+## Documentation
+* Notebooks
+* Gitbooks
+* Sphinx
+* Epydoc
+* Pydoc
+* Markdown
+* readthedocs
+
+### documentation
+Yes it is usually bad. If there is good documentation usually everything else is in place.
+
+Fortunately lack of documentation is easy to replace: You need the former contributor next to your desk at least for some time. If you simply get handed the code and your predecessor departs for vacations or forever, expect big trouble.

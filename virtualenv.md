@@ -1,5 +1,5 @@
 
-# Managing Python libraries with virtualenv
+# Virtual Environments
 
 When developing a software, you often need a specific combination of Python libraries. Sometimes this is difficult, because you require a specific version of a library, want to test your program on both Python 2 and 3, or simply need to develop your program further, while a stable version is installed on the same machine. In these cases, *virtualenv* comes to the rescue.
 
@@ -69,3 +69,18 @@ Other commands include, but are not limited to:
 
 * [https://virtualenv.pypa.io/](https://virtualenv.pypa.io/)
 * [https://virtualenvwrapper.readthedocs.org/](https://virtualenvwrapper.readthedocs.org/)
+
+
+https://github.com/pyenv/pyenv/blob/master/README.md#installation
+
+pyenv install 3.6.1
+pyenv global 3.6.1
+
+pip3 install virtualenv
+pip3 install virtualenvwrapper
+
+pyenv virtualenv myproject
+pyenv virtualenv 3.6.1 myproject
+pyenv activate myproject
+http://codingbat.com/
+http://nifty.stanford.edu/

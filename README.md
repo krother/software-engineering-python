@@ -1,22 +1,34 @@
 
-# Engineering Scientific Software in Python
+# Python Development Tools
 
 *Kristian Rother & Magdalena Rother*
 
-#### What this book is about
+### What this book is about?
 
-We are two software engineers who have worked as software developers in bioinformatics for 12 and 7 years. We decided to write down our experience resulting from many Python projects in life science.
+This guide is for you if you are writing your first programs with more than 500 lines.
 
-We assume you know Python, but would like to know how to develop better programs. Programs that get the job done and don't fall apart. To write such programs, Software Engineering is useful. Software engineering is a set of best practices not only for writing code, but keeping a software as a whole healthy.
+You know how to write Python code well, but have realized that creating a piece of software is more complex. You are facing questions like:
 
-Our first chapter is about **how to take over a legacy project**.
+* How to install my program on multiple devices?
+* How to make sure the program works?
+* How to keep the program running over time?
+* How to deliver the program to other people?
 
-#### Contact
+Inf brief, you would like to develop programs that get the job done and don't fall apart.
+
+To write such programs, there are established best practices that allow you to develop, test and maintain software systematically. Fortunately, Python comes with mature development tools. You might call these tools *"Software Engineering Practices"*, but we find the term a bit pompous. 
+
+We just want to help you to get things done quickly.
+
+
+### Contact
+
+We are two software engineers who decided to write down our experience resulting from many Python projects in life science, web development and teaching.
+
 We are curious to hear what other topics you would like to read about. You can reach us via:
+
 * [krother@academis.eu](krother@academis.eu)
 * [magdalena.rother@gmail.com](magdalena.rother@gmail.com)
 
-You can subscribe to updates of this book on [gitbook.io](https://www.gitbook.io/book/krother/scientific-software-engineering-in-python)
-
-#### License
+### License
 This text is released under the conditions of the Creative Commons Attribution Share-alike License 4.0.

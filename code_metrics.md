@@ -126,4 +126,3 @@ Questions you can ask include:
 * How old are the last entries?
 * Are the entries meaningful and understandable?
 * Is there an analog system for tasks and bugs (whiteboard, pin board, notebook). This is an alternative to electronic systems.
-

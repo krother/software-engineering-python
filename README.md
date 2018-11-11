@@ -71,4 +71,5 @@ We are curious to hear what other topics you would like to read about. You can r
 * [magdalena.rother@gmail.com](magdalena.rother@gmail.com)
 
 ### License
+
 This text is released under the conditions of the Creative Commons Attribution Share-alike License 4.0.

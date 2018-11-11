@@ -1,31 +1,33 @@
 
-# Editoren für Python
+# Editors
 
-| Editor | Hauptvorteil |
-| IDLE | Konsole, einfach zu installieren |
-| Sublime2 | viele Datentypen, Tastaturkommandos |
-| Spyder | 2 Konsolen, viele Pakete, Variablen hervorheben |
-| Pycharm | Funktionen für sehr große Programme |
-| Jupyter | übersichtlich, LaTeX und Diagramme integriert |
-| geany | Spalte mit Variablen und Modulen |
+The editor is the main tool of a programmer.
 
-# Tools for writing Python Code
+Here we list the most common Python editors.
 
-## Python shell
-
-The most basic interactive Python command line, where each line starts with a `>>>`.
+| editor | description   |
+|--------|---------------|
+| IDLE | default basic Python editor |
+| IPython | powerful interactive environment |
+| Spyder | Anaconda IDE with interactive debugger |
+| Jupyter | great for integrating output, text and diagrams |
+| Sublime2 | many plugins, powerful key commands |
+| Atom | like Sublime, but 100% Open Source |
+| Pycharm | lots of functionality for writing big programs |
+| Notepad++ | good general-purpose text editor on Windows |
+| Vim | works through SSH |
 
 ## IDLE
 
 Standard editor in Python distributions, easy to use but very basic.
 
-## IPython
-
-A more sophisticated interactive Python command line. It incorporates tab-completion, interactive help and regular shell commands. Also look up the `%`-magic commands.
-
 ## Spyder
 
 **Spyder** is part of the **Anaconda** Python distribution. It is a small IDE mostly for data analysis, similar to RStudio. It automatically highlights Syntax errors, contains a variable explorer, debugging functionality and other useful things.
+
+## IPython
+
+A more sophisticated interactive Python command line. It incorporates tab-completion, interactive help and regular shell commands. Also look up the `%`-magic commands.
 
 ## Jupyter Notebooks
 
@@ -37,7 +39,7 @@ A general-purpose text editor that works on all systems. There are many plugins 
 
 ## Atom
 
-The Open Source cousin of Sublime2. It is on my wishlist.
+The Open Source cousin of Sublime2. It has great GitHub integration.
 
 ## PyCharm
 
@@ -45,16 +47,8 @@ PyCharm is probably the most luxurious IDE for Python. It contains tons of funct
 
 ## Notepad++
 
-If you must use a text editor on Windows to edit Python code, refuse to use anything worse than **Notepad++**.
-
-## geany
-
-I have no idea what **geany** even is, so I suppose it is a tool for MacOS.
+If you must use a text editor on Windows to edit files, use **Notepad++**. **DO NOT USE THE WINDOWS NOTEPAD**
 
 ## Vim
 
-I know people who are successfully using Vim to write Python code and are happy with it.
-
-## Emacs
-
-I know people who are successfully using Emacs to write Python code, but haven't asked them how happy they are.
+To use Vim, you need to learn a lot of keyboard shortcuts. Its unique advantage is that it is the only editor in this collection that you can use through an SSH connection on a remote machine.

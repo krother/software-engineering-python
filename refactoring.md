@@ -1,18 +1,109 @@
-# Refaktorisieren
 
-*Refaktorisieren* heißt, ein Programm aufzuräumen und dessen Struktur zu verbessern (vor allem in Funktionen und Klassen aufteilen). Dies wird umso wichtiger, je größer ein Proramm wird.
+# Refactoring
 
-## Warum solltest Du refaktorisieren?
+*Refactoring* means *cleaning up a program* and *improving its structure*.
 
-Ein kleines Programm kannst Du verschrotten und schnell neu schreiben. Ein grosses musst Du refaktorisieren, damit es nicht auseinander fällt.
 
-Kurz: Ordnung zu halten spart Zeit, Geld und Nerven.
+## Why should you refactor?
 
-## Wie refaktorisiert man richtig?
+It is easy to scrap and rewrite a small program. With a bigger one, it is necessary to refactor it from time to time. 
 
-Bei einem kleineren Programm solltest Du refaktorisieren, sobald das Programm läuft und Du entspannt etwas Zeit hast, aufzuräumen.
+Refactoring makes code more readable, makes it easier to add new features or to change existing ones.
+If you omit refactoring for a while, **tech debt** accumulates. This makes maintenance increasingly difficult. In the worst case a program might simply fall apart as soon as you try to change the code.
 
-Bei einem größeren Programm macht Refaktorisieren ohne **automatische Tests** gar keinen Sinn.
+The bigger a program is, the more important refactoring becomes. In brief, it saves time, money and your mental energy.
 
-Eine Menge Techniken zum Refaktorisieren findest Du auf [sourcemaking.com](https://sourcemaking.com/).
+## How to refactor?
 
+You should refactor a small program as soon as the program runs and you have a moment to clean up a bit.
+In a bigger program refactoring requires **automated tests**, so that you can check whether you accidentally broke anything.
+
+Refactoring means a lot of things:
+
+* removing unnecessary code
+* splitting long code blocks into functions
+* splitting code into modules
+* extracting classes from the code
+* rewriting statements that are hard to understand
+
+On [sourcemaking.com](https://sourcemaking.com/) you find a catalog of refactoring techniques.
+
+## What is tech debt?
+
+**Technical debt** is a frequent problem in projects evolving over time. When existing code is hard to work with, this is called **technical debt**. It includes:
+
+* lack of documentation
+* lack of structure
+* badly written code
+* code that breaks in special cases
+* bugs
+* .. and many more
+
+This phenomenon has also been described as [**software entropy**](https://en.wikipedia.org/wiki/Software_entropy) and [**Lehmanns Laws**](https://en.wikipedia.org/wiki/Lehman%27s_laws_of_software_evolution).
+
+## How does technical debt emerge?
+
+There are at least six reasons why technical debt accumulates:
+
+### 1. Haste
+
+**Pressure to finish quickly** teases programmers to cut corners. Programmers under pressure try to get the code running, no matter what (*"I can clean this up later."*). Producing clean, transparent, well-tested code becomes a secondary issue. Small nodules of messy code will emerge, grow, accumulate, and if you rush from deadline to deadline, the program becomes a jungle.
+
+Slowing down your pace of programming under pressure takes courage.
+
+### 2. Misunderstanding the problem
+
+When you first write a program, you are making assumptions about the real-world problem it solves. Almost inevitably, some of these assumptions turn out to be wrong. Every time you add new code to correct your wrong assumptions, they will lay a burden on the original design – unless you clean up properly.
+
+Because of that, the milestone book *"the mythical man-month"* (Brooks, 1963) states: *"Be prepared to throw one away."*
+
+### 3. Lack of experience
+
+A programmer might write code that is difficult to maintain because he doesn't know better. An unexperienced programmer thinks that programming means writing code. An experienced programmer - like anyone interested in a book on software engineering - knows that sometimes programming means writing code, and sometimes it doesn't.
+
+Lack of experience often results in code that is unnecessary long or complicated. This can happen even to experienced programmers switching from another language. Once, we stumbled upon the following Python code fragment written by a C programmer:
+
+    i = 0; s = []
+    f = open(filename,'r')
+    while 1:
+	    z = f.seek(i)
+    	if z==None:
+    		break
+    	ch = f.read(1)
+    	s.append(ch)
+    	i = i+1
+
+This code fragment can be written as:
+
+    s = list(open(filename).read())
+
+Even though Python is considered easy to learn, writing good Python code is not trivial.
+
+
+### 4. Overabundant experience
+
+Experienced programmers can create problematic code, too. In the first place, an experienced programmer is very good to have: They write sophisticated programs incredibly quickly, master new technologies and make them work. Such programmers are rare and valuable.
+
+The problem is that sometimes it takes another experienced programmer to understand their code. One example of such code is called **code golf**. In code golf, the programmer tries to implement a program with as few key strokes as possible:
+
+The moment an experienced programmer departs and leaves a lot of functional code that is hard to read, the project can suddenly go into debt.
+
+
+### 5. Python
+
+Python checks for SyntaxErrors and the most obvious exceptions at runtime. Unfortunately, Python does not notice much more.
+
+Even a simple typo like the following could pass unnoticed:
+
+	idx = 3
+
+	...
+
+    def get_modification_name(ids):
+         return DATABASE.get(idx)    # should be ids
+
+When you move this function to a separate module during a refactoring session, the code will break, thus revealing the bug.
+
+### 6. Changes in the environment
+
+Even if your program is written perfectly, it will slowly deteriorate. The libraries it uses may deprecate methods, new string encodings, display sizes, new customer wishes and other changes mean that your program is becoming less useful. To stay up to date technically, the code needs to adapt.

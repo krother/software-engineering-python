@@ -30,7 +30,6 @@ We just want to help you to get things done quickly.
 * [Writing code](writing_code.md)
 * [How to structure programs?](structuring_programs.md)
 * [How to structure classes and modules?](structure_classes_modules.md)
-* [Refactoring](refactoring.md)
 
 ### Quality
 
@@ -38,6 +37,7 @@ We just want to help you to get things done quickly.
 * [Code Style](coding_style.md)
 * [Code Reviews](code_reviews.md)
 * [Testing](testing.md)
+* [Refactoring](refactoring.md)
 * [Documentation](documenting.md)
 
 ### Infrastructure
@@ -53,7 +53,6 @@ We just want to help you to get things done quickly.
 
 * [Project Management](project_management.md)
 * [User Stories](user_stories.md)
-* [Technical Debt](tech_debt.md)
 * [How to work with legacy code?](legacy_code.md)
 * [How to recognize good scientific software?](good_software.md)
 * [How to create meaningful software?](creating_meaningful_software.md)   

@@ -13,7 +13,7 @@ Here we list the most common Python editors.
 | Jupyter | great for integrating output, text and diagrams |
 | Sublime2 | many plugins, powerful key commands |
 | Atom | like Sublime, but 100% Open Source |
-| Pycharm | lots of functionality for writing big programs |
+| PyCharm | lots of functionality for writing big programs |
 | Notepad++ | good general-purpose text editor on Windows |
 | Vim | works through SSH |
 

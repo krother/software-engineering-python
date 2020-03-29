@@ -1,11 +1,32 @@
 
-# Debuggen
+# Debugging
 
-Fehlersuche in Programmen ist eine eigene Fertigkeit. Mache Dich mit den wichtigsten Debugging-Werkzeugen aus.
+Debugging your code is a skill of its own. Here is a list of debugging techniques that you might want to try:
 
-Bei besonders hartnäckigen Programmfehlern hilft meist eine der folgenden Taktiken:
+## Easy Bugs
 
-* mache eine Pause
-* sprich mit jemandem
-* schreibe auf, was das Problem ist
-* lies Dir mehr Hintergrundwissen an
+* read the code
+* read the error message
+* inspect variables with `print(x)`
+* inspect the type of variables with `print(type(x))`
+
+## Difficult Bugs
+
+* take a break
+* reproduce the bug
+* reproduce the bug with minimal input data
+* drop assertions in your code
+* clean up your code
+* write more tests
+* explain the problem to someone else
+* step through the code in an interactive debugger
+* google the error message
+
+## Very Difficult Bugs
+
+* sleep over it
+* ask for a code review
+* write down what the problem is
+* draw a formal description of your program logic (flowchart, state diagram
+* draw a formal description of your data structure (class diagram, ER-diagram)
+* background reading on the library / algorithm you are implementing

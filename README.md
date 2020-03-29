@@ -7,16 +7,17 @@
 
 This guide is for you if you are writing your first programs with more than 500 lines.
 
-You know how to write Python code well, but have realized that creating a piece of software is more complex. You are facing questions like:
+You know how to write Python code, but have realized that creating a piece of software is more complex. You are facing questions like:
 
-* How to install my program on multiple devices?
-* How to make sure the program works?
+* How to make my code cleaner?
+* How to make sure my program works?
+* How to install my program on multiple computers?
 * How to keep the program running over time?
 * How to deliver the program to other people?
 
-Inf brief, you would like to develop programs that get the job done and don't fall apart.
+In brief, you would like to develop programs that get the job done and don't fall apart.
 
-To write such programs, there are established best practices that allow you to develop, test and maintain software systematically. Fortunately, Python comes with mature development tools. You might call these tools *"Software Engineering Practices"*, but we find the term a bit pompous. 
+To write such programs, there are established best practices that allow you to develop, test and maintain software systematically. Fortunately, Python comes with mature development tools. You might call these tools *"Software Engineering Practices"*, but we find the term a bit pompous.
 
 We just want to help you to get things done quickly.
 
@@ -43,7 +44,7 @@ We just want to help you to get things done quickly.
 ### Infrastructure
 
 * [Version Control](version_control.md)
-* [Managing required packages](pip.md)
+* [Managing packages with pip](pip.md)
 * [Virtual Environments](virtualenv.md)
 * [Project Templates](project_templates.md)
 * [Building Python packages](releases.md)
@@ -55,7 +56,6 @@ We just want to help you to get things done quickly.
 * [User Stories](user_stories.md)
 * [How to work with legacy code?](legacy_code.md)
 * [How to recognize good scientific software?](good_software.md)
-* [How to create meaningful software?](creating_meaningful_software.md)   
 * [How to make software citable?](citable_code.md)
 * [Links](links.md)
 

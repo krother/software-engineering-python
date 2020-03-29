@@ -30,3 +30,8 @@ Debugging your code is a skill of its own. Here is a list of debugging technique
 * draw a formal description of your program logic (flowchart, state diagram
 * draw a formal description of your data structure (class diagram, ER-diagram)
 * background reading on the library / algorithm you are implementing
+
+
+## Also see:
+
+* [Kristians Debugging Tutorial on PyData](https://www.youtube.com/watch?v=04paHt9xG9U)

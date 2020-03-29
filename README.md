@@ -29,22 +29,20 @@ We just want to help you to get things done quickly.
 
 * [Editors](editors.md)
 * [Writing code](writing_code.md)
-* [How to structure programs?](structuring_programs.md)
-* [How to structure classes and modules?](structure_classes_modules.md)
+* [CRC Cards](structuring_programs.md)
 
 ### Quality
 
 * [Debugging](debugging.md)
-* [Code Style](coding_style.md)
+* [PEP8 Code Style](coding_style.md)
 * [Code Reviews](code_reviews.md)
-* [Testing](testing.md)
 * [Refactoring](refactoring.md)
 * [Documentation](documenting.md)
 
 ### Infrastructure
 
 * [Version Control](version_control.md)
-* [Managing packages with pip](pip.md)
+* [ManaMichael Tom-Wing, Christie Wilsonging packages with pip](pip.md)
 * [Virtual Environments](virtualenv.md)
 * [Project Templates](project_templates.md)
 * [Building Python packages](releases.md)
@@ -57,7 +55,6 @@ We just want to help you to get things done quickly.
 * [How to work with legacy code?](legacy_code.md)
 * [How to recognize good scientific software?](good_software.md)
 * [How to make software citable?](citable_code.md)
-* [Links](links.md)
 
 
 ## Contact

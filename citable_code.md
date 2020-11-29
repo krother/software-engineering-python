@@ -1,19 +1,13 @@
 
 # Citable Code
 
-Getting credit:
+For scientists, getting credit for software is often essential.
+Here are a few linkss to start with:
 
-Making Your Code Citable: https://guides.github.com/activities/citable-code/
-http://zenodo.org/
-
-Software Sustainability Institute: https://www.software.ac.uk
-http://joss.theoj.org
-
-http://www.nature.com/news/toolbox
-http://opensciencetraining.com/index.php
-http://semver.org/
-http://openresearchsoftware.metajnl.com/
-https://speakerdeck.com/mfenner/publication-and-citation-of-scientific-software-with-persistent-identifiers
-* figshare
-* citeable software initiative
-
+* [GitHub guide: Making Your Code Citable](https://guides.github.com/activities/citable-code/)
+* [Zenodo](http://zenodo.org/)
+* [figshare](https://figshare.com/) - citable data
+* [Software Sustainability Institute](https://www.software.ac.uk)
+* [Journal of Open Source Software](http://joss.theoj.org)
+* [Journal of Open Research Software](http://openresearchsoftware.metajnl.com/)
+* [Publishing with persistent identifiers](https://speakerdeck.com/mfenner/publication-and-citation-of-scientific-software-with-persistent-identifiers) - slides by Martin Fenner

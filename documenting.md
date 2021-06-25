@@ -1,59 +1,66 @@
 
-# Documentation Tools
+# Python Documentation Tools
 
 Although it sounds like a boring task at first, I like documenting software. I like writing about both my own programs and those of other people. Here is why:
 
 * First, it makes the software a lot more usable - bad documentation is a good way to keep your users out.
 * Second, it makes you think about the program from a new angle, helping you understand more deeply what it does.
 * Third, as long as you are writing in your native tongue, it is not really difficult, even if you are a beginner.
+* Fourth, the first person who is going to benefit from good documentation is **yourself** – in a couple of weeks or months.
 
-That said, there are a number of good Python tools to build and maintain documentation. For this article, I selected six of them:
+That said, there are a number of good Python tools to build and maintain documentation. For this article, you will find my favourite selection:
 
 ## Sphinx
 
-[Sphinx](http://sphinx-doc.org/) is the most well-known documentation tool for Python. It uses files in the [reStructuredText](http://docutils.sourceforge.net/rst.html) markup format to create **HTML websites** and **PDF documents**. Running Sphinx could look like this:
+[Sphinx](http://sphinx-doc.org/) is the most well-known documentation tool for Python. It uses files in the [reStructuredText](http://docutils.sourceforge.net/rst.html) markup format to create **HTML websites** and **PDF documents**. Sphinx is what many big Python libraries and Python itself use for their documentation.
 
+Running Sphinx could look like this:
+
+    :::bash
     sphinx-build html
 
-The strengths of Sphinx are that you can construct cross-references within your documentation easily, and that the Python syntax highlighting is one of the best. Finally, Sphinx runs **doctests** in your code. What I like less is the layout of the generated websites, which I found difficult to change. Building documentation with Sphinx reminds me of compiling my 150-page thesis with LaTeX - it feels a bit heavy.
+Sphinx has its strengths in:
 
-### Also see
+* building documents with cross-references
+* integrating docstrings
+* running tests from code examples (**doctests**) to see if your documentation is up to date
 
-* [Talk on Sphinx](https://www.youtube.com/watch?v=hM4I58TA72g)
+Sometimes I find the layout of the generated websites difficult to change, but the available templates are very good. In conclusion, I would recommend Sphinx for documentation that consists of 20+ pages. For smaller projects it may feel a bit heavy.
 
+If you like to know more, check out this **[Talk by Eric Holscher](https://www.youtube.com/watch?v=hM4I58TA72g)**
+
+----
 
 ## Mkdocs
 
-[Mkdocs](http://www.mkdocs.org/) is a very young Python project for writing documentation which is undergoing rapid development. It uses **Markdown** as a markup language. [Markdown](http://daringfireball.net/projects/markdown/basics) is almost ridiculously simple (see an [interactive tutorial](http://markdowntutorial.com)). With Mkdocs you can compile a static HTML website from a folder with Markdown files. There are many templates to choose from and you can create your own easily. A very cool feature is that you can run a local documentation server with
+[Mkdocs](http://www.mkdocs.org/) is a Python documentation tool using **Markdown** as a markup language. [Markdown](http://daringfireball.net/projects/markdown/basics) is almost ridiculously simple (see an [interactive tutorial](http://markdowntutorial.com)). With Mkdocs you can compile a static HTML website from a folder with Markdown files. There are many templates to choose from and you can create your own easily.
 
+A very cool feature is that you can run a local documentation server with
+
+    :::bash
     mkdocs serve
 
 and the local website is automatically updated as you edit the Markdown documents.
 
-## pydoc
+Personally, I find Mkdocs much easier to get started with than Sphinx, but you have less control over things. Even changing the order of the table of contents requires an effort.
 
-[pydoc](https://docs.python.org/2/library/pydoc.html) generates HTML pages directly from Python code. It utilizes the docstrings of modules, classes and functions. Although the look & feel of the resulting documentation is quite raw, pydoc scores by making documentation available instantly. With
+----
 
-    pydoc -b
+## GitHub Pages
 
-you should get a browser window with documentation links to all modules currently installed. Of course you can export the pages to HTML for the modules of your choice.
+[Github](https://github.com/) offers a neat mechanism to create your own pages at zero cost. It renders ReST and Markdown documents (e.g. README files). You can configure GitHub pages from the **Settings** tab of your repository. There is nothing Python-specific about GitHub pages, so it is totally up to you to make sure your documentation works.
 
+Personally, I find the templates not that easy to edit. But GitHub pages are a great option for publishing a web page that goes beyond a README file. It is also a great tool to set up your first personal web page.
 
-## Public Code Repositories
-
-All of [Github](https://github.com/), [Bitbucket](https://bitbucket.org/) and [Sourceforge](http://sourceforge.net/) have their own mechanisms to display pages with documentation. These include rendering of ReST and Markdown documents (e.g. README files) and simple Wiki sites. For non-technical users they may look a bit scary, and you may lack the possibility to use your own page design. They definitely work as a starting point.
-
+----
 
 ## Readthedocs
 
-[Readthedocs](https://readthedocs.org/) is a website hosting documentation for many programming projects. It can handle both the **Sphinx** and **Mkdocs** formats (ReST and Markdown, respectively). The nice thing about it is that you can connect Readthedocs to your Github or Bitbucket repository, so that every time you push new code to the repository, the documentation gets updated as well.
+[Readthedocs](https://readthedocs.org/) is a website hosting documentation for many programming projects. It can handle both the **Sphinx** and **Mkdocs** formats (ReST and Markdown, respectively). The nice thing about it is that you can connect Readthedocs to your Github or Bitbucket repository, so that every time you push new code to the repository, the documentation gets updated as well. As long as the repository is public, no additional cost is involved.
 
-## Gitbook
+My personal opinion: Great, go for it!
 
-If you want to publish your documentation as an e-book, [Gitbook](https://www.gitbook.com/) is the tool of choice. It uses Markdown files plus a file with the table of contents to build your book as HTML, PDF, EPUB and MOBY. Gitbook provides its own editor, so you can write a book without knowing anything about e-books, about git or about programming. Compared to *real* books, there are some disadvantages, most notably the page breaks often suck. On the other hand, this is the only service listed here that allows you to sell your books.
-
-That said, Gitbook is a great way to publish free technical documentation and training material. For an example, see the fantastic [DjangoGirls Tutorial](https://www.gitbook.com/book/djangogirls/djangogirls-tutorial/details), my personal gold standard.
-
+----
 
 ## Conclusion
 

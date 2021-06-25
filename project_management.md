@@ -15,29 +15,33 @@ Programming projects change and evolve for a multitude of reasons:
 
 * your users request changes.
 * bugs need to be fixed.
-* the libraries you use evolve. 
+* the libraries you use evolve.
 * external requirements (e.g. regulations) change.
 * you have ideas you want to implement.
 
 Change is inevitable.
 
+----
+
 ## Waterfall
 
 Naively, one could try to structure a programming project as consecutive steps, known as the **Waterfall model**.
 
-![Waterfall](waterfall.png)
+![Waterfall](images/waterfall.png)
 
-Because of the nature of change, the waterfall model only works for projects where you know the problem *and* the technologies very well. Even then, the program will need to be maintained afterwards. 
+Because of the nature of change, the waterfall model only works for projects where you know the problem *and* the technologies very well. Even then, the program will need to be maintained afterwards.
 
 In practice, there are no finished programs.
 
 It is more helpful to think of programming as an ongoing activity, like gardening.
 
+----
 
 ## Supervisors
 
 One thing that makes software projects difficult for managers is that they cannot see a half-finished program. Many times, they will ask questions like:
 
+    :::text
     "When will the program be finished?"
 
 It is very difficult for non-programmers to understand that this question is meaningless. You might as well
@@ -51,6 +55,7 @@ Therefore it is challenging to make managers happy and get them out of the way a
 * demonstrate a small working version early.
 * learn about the Agile methodology, but do not become attached to it
 
+----
 
 ## What does 'done' mean?
 

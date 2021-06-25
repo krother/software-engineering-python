@@ -1,9 +1,7 @@
 
 # Editors
 
-**The editor is the main tool of a programmer.**
-
-**Pick one editor and learn to use it well.**
+**The editor is the main tool of a programmer. Learn to use one of them well.**
 
 Here we list the most common Python editors.
 
@@ -11,11 +9,12 @@ Here we list the most common Python editors.
 |--------|---------------|
 | VS Code | powerful editor with many plugins, maintained by Microsoft |
 | Atom | Open Source editor with many plugins |
+| PyCharm | lots of functionality for writing big programs |
+| Spyder | Anaconda IDE with interactive debugger |
 | IDLE | default basic Python editor |
 | IPython | powerful interactive environment |
-| Spyder | Anaconda IDE with interactive debugger |
 | Jupyter | great for integrating output, text and diagrams |
-| PyCharm | lots of functionality for writing big programs |
+| JupyterLab | like Jupyter but slightly different interface |
 | Notepad++ | good general-purpose text editor on Windows |
 | Vim | works through SSH and other terminals |
 
@@ -29,14 +28,13 @@ A modern general-purpose text editor. There are many plugins for Python and othe
 
 ## Atom
 
-The Open Source cousin of Sublime2. It has great GitHub integration.
+An Open Source editor that also has great GitHub integration. In many aspects atom is comparable to VS Code.
 
 ----
 
-## IDLE
+## PyCharm
 
-Standard editor in Python distributions, easy to use but very basic.
-IDLE is not really useful for bigger programs.
+PyCharm is probably the most luxurious IDE for Python. It contains tons of functions that cover most of what the other editors offer. This makes PyCharm a great choice for bigger Python projects, although it has a bit of a learning curve.
 
 ----
 
@@ -46,21 +44,28 @@ IDLE is not really useful for bigger programs.
 
 ----
 
-## IPython
+## IDLE
 
-A more sophisticated interactive Python command line. It incorporates tab-completion, interactive help and regular shell commands. Also look up the `%`-magic commands.
+The standard editor distributed with Python. IDLE is easy to use but very basic.
+IDLE is not useful for bigger programs.
 
 ----
 
-## Jupyter Notebooks
+## IPython
+
+IPython is a better interactive Python command line. It incorporates tab-completion, interactive help and running regular shell commands.
+
+IPython adds `%`-magic commands like `%time` and `%hist` that are available in most of the other editors. This is why you find IPython listed here.
+
+IPython is very useful to try out a few lines of code quickly, but it does not really count as an editor.
+
+----
+
+## Jupyter and Jupyter Lab
 
 Interactive environment for the web browser. A Jupyter notebook contains Python code, text, images and any output from your program (including plots!). It is a great tool for exploratory data analysis.
 
-----
-
-## PyCharm
-
-PyCharm is probably the most luxurious IDE for Python. It contains tons of functions that are a superset of all the above. PyCharm is a great choice for bigger Python projects.
+Jupyter Lab offers a slightly different interface, but does the same things under the hood.
 
 ----
 

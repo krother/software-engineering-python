@@ -1,5 +1,5 @@
 
-# Managing Packages with pip
+# Installing Packages with pip
 
 `pip` is a tool to install Python packages and resolve dependencies automatically. This section lists a couple of things you can do with `pip`:
 
@@ -7,17 +7,21 @@
 
 To install a Python package, call `pip` with the package name:
 
+    :::bash
     pip install pandas
 
 You can specify the exact version of a package:
 
+    :::bash
     pip install pandas==0.25.0
 
+----
 
 ### Install many packages
 
 First, create a file `requirements.txt` in your project directory. The file should look similar to this:
 
+    :::text
     pandas==0.25
     numpy>=1.17
     scikit-learn
@@ -25,14 +29,19 @@ First, create a file `requirements.txt` in your project directory. The file shou
 
 Second, ask `pip` to install everything:
 
+    :::bash
     pip -r requirements.txt
 
+----
 
 ### Install from a git repo
 
 If a repository has a `setup.py` file, you could install directly from git. This is useful to install branches, forks and other work in progress:
 
+    :::bash
     pip install git+https://github.com/pandas-dev/pandas.git
+
+----
 
 ### Install a package you are developing
 
@@ -40,23 +49,32 @@ When developing, you might want to pip-install a working copy. This allows you t
 
 For the following to work, your project folder needs to have a `setup.py`:
 
+    :::bash
     pip install --editable .
 
-### List versions of installed packages
+----
 
-This one prints everything you have installed:
+### List all installed packages
 
+This one prints all packages you have installed and their versions:
+
+    :::bash
     pip freeze
 
 To search for a pacakge, use `grep`:
 
+    :::bash
     pip freeze | grep pandas
 
+----
 ### Uninstall a package
 
 `pip` also removes packages:
 
+    :::bash
     pip uninstall pandas
+
+----
 
 ### Where does pip store its files?
 
@@ -64,11 +82,13 @@ Usually, packages are stored in the `site_packages/` folder. Where this one is d
 
 You might want to check your `PYTHONPATH` environment variable. To do so from Python, use:
 
+    :::python3
     import sys
-    sys.path
+    print(sys.path)
+
+----
 
 ### Also see
 
 * The `conda` program (part of the Anaconda distribution) is often a viable alternative to pip
-* `pipenv` is conceptually better, but it I consider it hot new stuff and not a Best Practise yet (03/2020)
 * You find all installable packages on the [Python Package Index pypi.org](http://pypi.org)

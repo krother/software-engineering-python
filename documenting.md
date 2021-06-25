@@ -1,5 +1,5 @@
 
-# Python Documentation Tools
+# Documentation Tools
 
 Although it sounds like a boring task at first, I like documenting software. I like writing about both my own programs and those of other people. Here is why:
 

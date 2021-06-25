@@ -2,7 +2,7 @@
 # Citable Code
 
 For scientists, getting credit for software is often essential.
-Here are a few linkss to start with:
+Here are a few links to start with:
 
 * [GitHub guide: Making Your Code Citable](https://guides.github.com/activities/citable-code/)
 * [Zenodo](http://zenodo.org/)

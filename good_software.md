@@ -36,6 +36,7 @@ When you use a program, you need to be 100% sure that it does exactly what you t
 Each scientific program should include at least one set of sample data. There should be an instruction how to use the sample data and exactly what output it produces. Sometimes, this approach is broken down into small steps: a cookbook explaining small actions and their effect. Eventually, you will find an automatic test suite. This is a script that automatically checks whether different parts of the program work correctly. When you see a message like
 
 
+    :::text
     110 of 110 tests OK.
 
 you know that at least everything the developers felt important to check works.
@@ -44,7 +45,7 @@ All of these methods have in common that some input data with a known output is 
 
 ### Conclusions
 
-If a program fails several of the above quality indicators, it does not mean that the program is bad or that the authors can't program. Probably you are seeing only a tiny bit of all the work that went into the software. But it also means that your risk of usage is higher. If the software you are using is a prototype (and many projects never leave that stage), one of the best things you can do is to contact the authors directly. This is beneficial for both of you. 
+If a program fails several of the above quality indicators, it does not mean that the program is bad or that the authors can't program. Probably you are seeing only a tiny bit of all the work that went into the software. But it also means that your risk of usage is higher. If the software you are using is a prototype (and many projects never leave that stage), one of the best things you can do is to contact the authors directly. This is beneficial for both of you.
 
 The list in this post is incomplete. If you are an author and I missed your favorite engineering technique, or if you use scientific software and have a suggestion what would make your life easier, drop me a line.
 

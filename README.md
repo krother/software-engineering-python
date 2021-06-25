@@ -38,12 +38,7 @@ Below you find development tools and techniques that help you to write programs 
 * [Structuring Programs](structuring_programs.md)
 * [CRC Cards](structuring_programs.md)
 * [Refactoring](refactoring.md)
-
-### Infrastructure
-
 * [Project Templates](project_templates.md)
-* [Building Python packages](releases.md)
-* [Continuous Integration](continuous_integration.md)
 
 ### Teamwork
 

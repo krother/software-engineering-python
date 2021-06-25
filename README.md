@@ -19,40 +19,40 @@ Below you find development tools and techniques that help you to write programs 
 
 ## Contents
 
-### Programming
+### Fundamental Tools
 
 * [Editors](editors.md)
-* [Writing code](writing_code.md)
-* [CRC Cards](structuring_programs.md)
-
-### Quality
-
-* [Debugging](debugging.md)
 * [PEP8 Code Style](coding_style.md)
-* [Code Reviews](code_reviews.md)
-* [Refactoring](refactoring.md)
-* [Documentation Tools](documenting.md)
-
-### Infrastructure
-
 * [Version Control](version_control.md)
 * [Installing packages with pip](pip.md)
 * [Virtual Environments](virtualenv.md)
+* [Documentation Tools](documenting.md)
+
+### Coding Strategies
+
+* [Coding Strategies](writing_code.md)
+* [Debugging](debugging.md)
+
+### Program Structure
+
+* [Structuring Programs](structuring_programs.md)
+* [CRC Cards](structuring_programs.md)
+* [Refactoring](refactoring.md)
+
+### Infrastructure
+
 * [Project Templates](project_templates.md)
 * [Building Python packages](releases.md)
 * [Continuous Integration](continuous_integration.md)
 
-### Projects
+### Teamwork
 
 * [Project Management](project_management.md)
 * [User Stories](user_stories.md)
+* [Code Reviews](code_reviews.md)
 * [How to work with legacy code?](legacy_code.md)
 * [How to recognize good scientific software?](good_software.md)
 * [Citable Code](citable_code.md)
-
-### Other
-
-* [Good vs. Bad Practices](best_practices.md)
 
 ----
 

@@ -1,17 +1,19 @@
 
 # Refactoring
 
-*Refactoring* means *cleaning up a program* and *improving its structure*.
+**Refactoring means cleaning up a program and improving its structure.**
 
 
 ## Why should you refactor?
 
-It is easy to scrap and rewrite a small program. With a bigger one, it is necessary to refactor it from time to time. 
+It is easy to scrap and rewrite a small program. With a bigger one, it is necessary to refactor it from time to time.
 
 Refactoring makes code more readable, makes it easier to add new features or to change existing ones.
 If you omit refactoring for a while, **tech debt** accumulates. This makes maintenance increasingly difficult. In the worst case a program might simply fall apart as soon as you try to change the code.
 
 The bigger a program is, the more important refactoring becomes. In brief, it saves time, money and your mental energy.
+
+----
 
 ## How to refactor?
 
@@ -28,9 +30,13 @@ Refactoring means a lot of things:
 
 On [sourcemaking.com](https://sourcemaking.com/) you find a catalog of refactoring techniques.
 
+----
+
 ## What is tech debt?
 
-**Technical debt** is a frequent problem in projects evolving over time. When existing code is hard to work with, this is called **technical debt**. It includes:
+If refactoring is ignored a project may accumulate **Technnical debt**.
+**Technical debt** is a frequent problem in projects evolving over time.
+It includes:
 
 * lack of documentation
 * lack of structure
@@ -40,6 +46,8 @@ On [sourcemaking.com](https://sourcemaking.com/) you find a catalog of refactori
 * .. and many more
 
 This phenomenon has also been described as [**software entropy**](https://en.wikipedia.org/wiki/Software_entropy) and [**Lehmanns Laws**](https://en.wikipedia.org/wiki/Lehman%27s_laws_of_software_evolution).
+
+----
 
 ## How does technical debt emerge?
 
@@ -63,6 +71,7 @@ A programmer might write code that is difficult to maintain because he doesn't k
 
 Lack of experience often results in code that is unnecessary long or complicated. This can happen even to experienced programmers switching from another language. Once, we stumbled upon the following Python code fragment written by a C programmer:
 
+    :::python3
     i = 0; s = []
     f = open(filename,'r')
     while 1:
@@ -75,10 +84,10 @@ Lack of experience often results in code that is unnecessary long or complicated
 
 This code fragment can be written as:
 
+    :::python3
     s = list(open(filename).read())
 
 Even though Python is considered easy to learn, writing good Python code is not trivial.
-
 
 ### 4. Overabundant experience
 
@@ -95,9 +104,10 @@ Python checks for SyntaxErrors and the most obvious exceptions at runtime. Unfor
 
 Even a simple typo like the following could pass unnoticed:
 
-	idx = 3
+    :::python3
+	  idx = 3
 
-	...
+    ...
 
     def get_modification_name(ids):
          return DATABASE.get(idx)    # should be ids

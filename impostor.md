@@ -1,15 +1,18 @@
 
-# Das Impostor-Syndrome
+# Dealing with Impostor-Syndrome
 
-Programmieren ist manchmal eine frustrierende Angelegenheit.
-Manchmal bist Du so frustriert, dass Du anfängst zu glauben, dass Du unfähig bist, und eigentlich nicht programmieren solltest. Du kannst das auch gut anhand der Ergebnisse anderer Programmierer belegen.
+Programming is sometimes frustrating.
+Sometimes you get so frustrated that you start to believe that you are incompetent and should not be programming at all.
+Looking at the code of other programmers, it is easy to find examples that someone did something better than you.
 
-Dies ist das sogenannte **Impostor-Syndrome** (Hochstapler-Syndrom). Es ist eine Warnmeldung Deines Gehirns, dass es momentan überlastet ist.
-Anders ausgedrückt: *"Höchste Zeit für eine Pause!"*
+This is the so-called **Impostor Syndrome**. It is a warning message from your brain that it is currently overloaded.
+In other words: *"time for a break!"*.
 
-Du solltest das Impostor-Syndrome als guten Freund gewinnen, denn es wird Dich begleiten, solange Du programmierst. Auch nach 30 Jahren stoße ich immer wieder auf Code, den ich nicht verstehe, auf Probleme, die ich nicht lösen kann, auf Programme von scheinbar unerreichbar genialen Programmierern.
+You should make the Impostor Syndrome a good friend, because it will be with you as long as you program.
+Even after 30 years, I still come across code I don't understand, problems I cannot solve, programs from seemingly unattainable genius programmers.
 
-Aber oft stellt sich heraus, dass nur ein oder zwei Tricks fehlen, um etwas ähnliches zu erreichen. Sobald Du auf Code zurückschauen kannst, den Du einige Wochen zuvor geschrieben hast, wirst Du sehen, wie weit Du schon gekommen bist.
+But often it turns out that only one or two tricks are missing to achieve something similar.
+Once you can look back at code you wrote a few weeks earlier, you'll see how far you've come.
 
 ## Diskutiere in der Gruppe:
 

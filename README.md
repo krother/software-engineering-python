@@ -62,6 +62,6 @@ We are two Python software engineers who decided to write down our experience re
 
 ### License
 
-*(c) 2020 [Kristian Rother](http://github.com/krother) and [Magdalena Rother](http://github.com/lenarother)*
+*© 2020 [Kristian Rother](http://github.com/krother) and [Magdalena Rother](http://github.com/lenarother)*
 
 This text is released under the conditions of the Creative Commons Attribution Share-alike License 4.0.

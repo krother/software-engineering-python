@@ -10,7 +10,7 @@
 
 In March 2007 I inherited the [Modomics database](http://www.genesilico.pl/modomics) from Staszek, a MSc student in the lab. Staszek handed me the code and the server passwords. Then he moved to Germany. Although he did whatever he could to support me by email, a sackful of knowledge moved away with him.
 
-![Modomics](modomics.jpg)
+![Modomics](images/modomics.jpg)
 
 There was a hard deadline for publication in June. In May, the hard disk of the server crashed. I restored most of the code from the SVN repository and loaded the database dump. However, some features were lost on the way. I was determined to not only fully recover the project, but also to add enough value to submit the publication on time.
 
@@ -38,8 +38,9 @@ What I learned is that taking over a program from someone else is difficult.
 | Size | ~10000 Python LOC |
 | Technologies used | TurboGears web server <br> PostGreSQL database <br> Biopython <br> PIL |
 | Development tools used | bug tracker (TRAC) <br> automatic tests (partial) <br> SVN repository <br> User Stories <br> Entity-relationship diagram |
-| Publications | Machnicka MA, Milanowska K, Osman Oglu O, Purta E, Kurkowska M, Olchowik A, Januszewski W, Kalinowski S, Dunin-Horkawicz S, Rother KM, Helm M, Bujnicki JM, Grosjean H. MODOMICS: a database of RNA modification pathways: 2012 update. Nucleic Acids Res 2013 Jan 1;41(D1): D262-D267<br><br>Czerwoniec A, Dunin-Horkawicz S, Purta E, Kaminska KH, Kasprzak J, Bujnicki JM, Grosjean H, Rother K. MODOMICS: a database of RNA modification pathways. 2008 update. Nucleic Acids Res 2009 Jan;37(Database issue):D118-21. [Epub 2008 Oct 14]<br><br>Dunin-Horkawicz S, Czerwoniec A, Gajda MJ, Feder M, Grosjean H, Bujnicki JM. MODOMICS: a database of RNA modification pathways. Nucleic Acids Res. 2006 Jan 1;34(Database issue):D145-9. |
+| Reference | Machnicka MA, Milanowska K, Osman Oglu O, Purta E, Kurkowska M, Olchowik A, Januszewski W, Kalinowski S, Dunin-Horkawicz S, Rother KM, Helm M, Bujnicki JM, Grosjean H. MODOMICS: a database of RNA modification pathways: 2012 update. Nucleic Acids Res 2013 Jan 1;41(D1): D262-D267 |
 
+----
 
 ## Assessing a Legacy Project
 
@@ -50,7 +51,7 @@ When you take over a project, you need to find out first what you got yourself i
 
 Intuitively, you would expect the according graph to look like this:
 
-![Simple assessment graph](legacy_graph_simple.png)
+![Simple assessment graph](images/legacy_graph_simple.png)
 
 In the section on **Code Metrics**, you will find questions to assess complexity and engineering quality in a project *before* you take it over.
 
@@ -94,8 +95,6 @@ Code does not exist by itself; it is maintained by persons. When you start work 
 #### The former developer
 Do you have a chance to meet the former developer once per week? Daily? Whenever you need? Is he able to support you directly during a transition period? Can you meet face-to-face?
 
-The importance of face-to-face conversation is frequently underestimated. There are companies where remote work is ubiquitous, like [37signals](http://www.37signals.com). As long as the work is easy, this is fine. However, taking over legacy code is easy. This is why we emphasize looking the other person in the eye.
-
 #### Other developers
 Are the more people who have worked with the code? Are they still actively involved? A co-developer is a valuable source of information, because often they view the code from a similar perspective as you.
 
@@ -104,6 +103,8 @@ Does the program have active users? Can you talk to them on a regular basis? Do 
 
 #### Your supervisor
 Is your supervisor aware of the state of the project? Can you discuss technical issues with him or a trusted mentor? Do you receive a clear vision or next major step for the project? Maybe your supervisor has been in a similar spot before and give you some valuable hints.
+
+----
 
 ### 7. Mission Impossible Game
 The [Mission Impossible Game](http://www.gamestorming.com/games-for-design/mission-impossible/) is a brainstorming method. The art of brainstorming is to first ask the right question. Then take decisions.

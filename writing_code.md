@@ -1,43 +1,72 @@
 
-# Strategien zum Schreiben von Code
+# Coding Strategies
 
-Es gibt mehrere Strategien, um Python-Code zu entwickeln. Hier findest Du einige, die für Anfänger geeignet sind:
+Python code can be developed using many strategies.
+Here you find a few beginner-friendly ones that are also used by experienced professionals.
 
-## Zeile für Zeile
+----
 
-1. Schreibe eine Zeile Programmcode
-2. Führe sie aus
-3. Prüfe, dass sie das tut, was Du möchtest
-4. weiter bei 1.
+## Line by Line
 
-Diese Strategie eignet sich besonders beim Ausprobieren von Befehlen, bei der Arbeit mit der **Python Shell** oder einem **Jupyter Notebook**. Sie funktioniert auch beim Schreiben eines Programms im Editor, vorausgesetzt, dass Du mit `print()` jedes Mal eine Ausgabe erzeugst.
+1. Write a line of code
+2. Execute it
+3. Check whether it is doing what you want
+4. Back to 1.
+
+This strategy is useful mainly for experimenting with new commands and while working in an
+interactive  **Python Shell** or a **Jupyter Notebook**.
+It also works with an editor as long as you either generate output with `print()` after every command or use your editors controls to step throught the program line by line.
+
+----
 
 ## Copy-Paste
 
-1. Kopiere ein kleines fertiges Programm
-2. Führe es *unverändert* aus
-3. Stelle sicher, dass das Programm funktioniert
-4. Verstehe, was das Programm tut
+1. Copy a small working piece of code
+2. Execute it **without modification**
+3. Make sure the code is working
+4. Understand what the program is doing
+5. Modify the code
 
-Diese Strategie eignet sich besonders, wenn Du neue Dinge ausprobierst (z.B. Bibliotheken). Für die meisten Python-Bibliotheken gibt es Sammlungen von Beispielen, die Du direkt verwenden kannst.
+This is a good strategy for trying out new tools or programming libraries.
+Most Python packages come with a set of examples that you can try out directly.
 
-## Programme anpassen
+Copy-pasting code from documentation, tutorials or pages like StackOverflow is a totally legitimate coding strategy!
 
-1. Starte mit einem funktionierenden Programm
-2. Verändere mehrere Zeilen
-3. Führe das Programm aus
-4. Beobachte, was passiert
+----
 
-Mit einem vorhandenen Programm zu starten ist oft schwieriger als alles neu zu schreiben. Der Unterschied zur ersten Strategie ist das *Beobachten* in Schritt 4. Oft findest Du hier unerwartete Dinge, die Dir zu tieferer Erkenntnis verhelfen.
+## Modify a Program
 
-## Alles auf einmal schreiben
+1. Begin with a working piece of code
+2. Modify a few lines
+3. Execute the program
+4. Observe what happens
 
-**ACHTUNG:** Folgendes ist **keine** einfache Strategie für Anfänger:
+Starting with an existing program is often more challenging than writing everything from scratch. The main difference to the copy-paste strategy is that in step 4. you observe.
+Often you can learn something new here.
 
-1. Schreibe zuerst das ganze Programm
-2. Stelle sicher, dass das Programm funktioniert
+----
 
-Bei Schrittt 2 hast Du nämlich nicht nur mit normalen **Programmfehlern** zu tun, sondern auch mit **konzeptionellen Fehlern**. Wenn Du nicht ganz genau weißt, was Du tust, kannst Du hierbei leicht hängen bleiben und frustriert aufgeben.
+## Skeleton Code
 
-Programme mit mehr als 20 Zeilen aus einem Guss zu schreiben ist übrigens auch für erfahrene Programmierer sehr schwierig. Die folgenden Programmiertechniken dienen alle dazu, dies zu vereinfachen.
+1. Write class and function definitions, but leave the bodies of the functions empty
+2. Make each function return dummy values
+3. Write a main section that uses the classes / functions
+4. Execute everything and make sure the program runs without Exceptions
+5. Start filling the function bodies one by one
 
+This is a somewhat different strategy that lets you think about the structure of a program without the details of the implementation getting in the way.
+
+----
+
+## Write everything in one go
+
+**CAUTION:** This is **not** an easy strategy:
+
+1. Write the entire program first
+2. Then execute it and make sure it works
+
+The difficulty in Step 2 is that you not only have to deal with normal bugs.
+You are also confronted with *semmantic mistakes* and *miscondeptions* that you made while coding. It is very easy to get stuck here and give up.
+
+Writing programs with more than 20 lines is not easy for experienced programmers.
+I hope the strategies listed here give you a few ideas for taking the next step.

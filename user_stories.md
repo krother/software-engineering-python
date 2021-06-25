@@ -36,7 +36,9 @@ Right size:
 
 ## Example User Story
 
-    As a teacher, I want to write grades into a table, so I don't need to write them down manually.
+    :::text
+    As a teacher, I want to mark student projects as complete
+    on a website, so I don't need to keep notes on paper.
 
 ## Other points
 

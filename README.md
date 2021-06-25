@@ -31,12 +31,12 @@ Below you find development tools and techniques that help you to write programs 
 * [PEP8 Code Style](coding_style.md)
 * [Code Reviews](code_reviews.md)
 * [Refactoring](refactoring.md)
-* [Documentation](documenting.md)
+* [Documentation Tools](documenting.md)
 
 ### Infrastructure
 
 * [Version Control](version_control.md)
-* [Managing packages with pip](pip.md)
+* [Installing packages with pip](pip.md)
 * [Virtual Environments](virtualenv.md)
 * [Project Templates](project_templates.md)
 * [Building Python packages](releases.md)

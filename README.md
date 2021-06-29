@@ -36,7 +36,7 @@ Below you find development tools and techniques that help you to write programs 
 
 ### Program Structure
 
-* [Structuring Programs](structuring_programs.md)
+* [Counting Lines of Code](loc.md)
 * [CRC Cards](structuring_programs.md)
 * [Refactoring](refactoring.md)
 * [Project Templates](project_templates.md)

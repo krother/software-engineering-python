@@ -51,6 +51,10 @@ Below you find development tools and techniques that help you to write programs 
 * [How to recognize good scientific software?](good_software.md)
 * [Citable Code](citable_code.md)
 
+### Extras
+
+* [Exercises](exercises.md)
+
 ----
 
 ## Contact

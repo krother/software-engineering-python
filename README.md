@@ -24,6 +24,7 @@ Below you find development tools and techniques that help you to write programs 
 * [Editors](editors.md)
 * [PEP8 Code Style](coding_style.md)
 * [Version Control](version_control.md)
+* [Environment Variables](environment_variables.md)
 * [Installing packages with pip](pip.md)
 * [Virtual Environments](virtualenv.md)
 * [Documentation Tools](documenting.md)

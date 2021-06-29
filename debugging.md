@@ -34,4 +34,5 @@ Debugging your code is a skill of its own. Here is a list of debugging technique
 
 ## Also see:
 
-* [Kristians Debugging Tutorial on PyData](https://www.youtube.com/watch?v=04paHt9xG9U)
+* [Debugging Tutorial](https://www.github.com/krother/debugging_tutorial)
+* [Kristians Debugging Tutorial Video](https://www.youtube.com/watch?v=04paHt9xG9U)

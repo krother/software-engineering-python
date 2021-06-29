@@ -47,3 +47,14 @@ After some time, they decide to install exactly the same Python version.
 - What do Python versions differ in? Find one example.
 - How could the programmers install exactly the same versions of Python libraries?
 - One of the programmers is working on another project that requires different library versions. Do they need to get another computer?
+
+----
+
+### Exercise 5: Programming Skills
+
+**Discuss the following questions in a small group:**
+
+* How would you assume that the velocity of runners distributed across a population? (If you want a statistical answer, check the *Central Limit Theorem*)
+* Enumerate a few activities that programmers need to do
+* Which of these activities do you enjoy in particular?
+* Which do you find difficult?

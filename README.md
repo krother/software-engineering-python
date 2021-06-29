@@ -44,6 +44,7 @@ Below you find development tools and techniques that help you to write programs 
 
 ### Teamwork
 
+* [Impostor Syndrome](impostor.md)
 * [Project Management](project_management.md)
 * [User Stories](user_stories.md)
 * [Code Reviews](code_reviews.md)

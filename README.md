@@ -38,6 +38,7 @@ Below you find development tools and techniques that help you to write programs 
 
 * [Counting Lines of Code](loc.md)
 * [CRC Cards](structuring_programs.md)
+* [Technical Debt](tech_debt.md)
 * [Refactoring](refactoring.md)
 * [Project Templates](project_templates.md)
 

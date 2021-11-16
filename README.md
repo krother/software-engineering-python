@@ -17,9 +17,7 @@ Below you find development tools and techniques that help you to write programs 
 
 ----
 
-## Contents
-
-### Fundamental Tools
+## Fundamental Tools
 
 * [Editors](editors.md)
 * [PEP8 Code Style](coding_style.md)
@@ -29,12 +27,16 @@ Below you find development tools and techniques that help you to write programs 
 * [Virtual Environments](virtualenv.md)
 * [Documentation Tools](documenting.md)
 
-### Coding Strategies
+----
+
+## Coding Strategies
 
 * [Coding Strategies](writing_code.md)
 * [Debugging](debugging.md)
 
-### Program Structure
+----
+
+## Program Structure
 
 * [Counting Lines of Code](loc.md)
 * [Technical Debt](tech_debt.md)
@@ -42,7 +44,9 @@ Below you find development tools and techniques that help you to write programs 
 * [CRC Cards](crc_cards.md)
 * [Project Templates](project_templates.md)
 
-### Teamwork
+----
+
+## Teamwork
 
 * [Impostor Syndrome](impostor.md)
 * [Project Management](project_management.md)
@@ -52,7 +56,9 @@ Below you find development tools and techniques that help you to write programs 
 * [How to recognize good scientific software?](good_software.md)
 * [Citable Code](citable_code.md)
 
-### Extras
+----
+
+## Extras
 
 * [Exercises](exercises.md)
 

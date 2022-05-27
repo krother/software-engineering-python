@@ -31,6 +31,7 @@ Below you find development tools and techniques that help you to write programs 
 
 ## Coding Strategies
 
+* [The Prototype](prototype.md)
 * [Coding Strategies](writing_code.md)
 * [Debugging](debugging.md)
 

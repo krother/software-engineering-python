@@ -17,11 +17,15 @@ Below you find development tools and techniques that help you to write programs 
 
 ----
 
+## Getting Started
+
+* [The Prototype](prototype.md)
+* [Set up a Git Repository](version_control.md)
+
 ## Fundamental Tools
 
 * [Editors](editors.md)
 * [PEP8 Code Style](coding_style.md)
-* [Version Control](version_control.md)
 * [Environment Variables](environment_variables.md)
 * [Installing packages with pip](pip.md)
 * [Virtual Environments](virtualenv.md)
@@ -31,7 +35,6 @@ Below you find development tools and techniques that help you to write programs 
 
 ## Coding Strategies
 
-* [The Prototype](prototype.md)
 * [Coding Strategies](writing_code.md)
 * [Debugging](debugging.md)
 

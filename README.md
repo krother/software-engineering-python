@@ -23,14 +23,17 @@ Below you find development tools and techniques that help you to write programs 
 * [Set up a Git Repository](version_control.md)
 * [Create a Folder Structure](folders.md)
 
+## Planning and Design
+
+* [User Stories](user_stories.md)
+* [CRC Cards](crc_cards.md)
+
 ## Fundamental Tools
 
 * [Editors](editors.md)
-* [PEP8 Code Style](coding_style.md)
 * [Environment Variables](environment_variables.md)
 * [Installing packages with pip](pip.md)
 * [Virtual Environments](virtualenv.md)
-* [Documentation Tools](documenting.md)
 
 ----
 
@@ -41,24 +44,24 @@ Below you find development tools and techniques that help you to write programs 
 
 ----
 
+## Cleaning Up
+
+* [PEP8 Code Style](coding_style.md)
+* [Refactoring](refactoring.md)
+* [Code Reviews](code_reviews.md)
+
+----
+
 ## Program Structure
 
 * [Counting Lines of Code](loc.md)
 * [Technical Debt](tech_debt.md)
-* [Refactoring](refactoring.md)
-* [CRC Cards](crc_cards.md)
 * [Project Templates](project_templates.md)
-
-----
-
-## Teamwork
-
 * [Impostor Syndrome](impostor.md)
 * [Project Management](project_management.md)
-* [User Stories](user_stories.md)
-* [Code Reviews](code_reviews.md)
 * [How to work with legacy code?](legacy_code.md)
 * [How to recognize good scientific software?](good_software.md)
+* [Documentation Tools](documenting.md)
 * [Citable Code](citable_code.md)
 
 ----

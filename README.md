@@ -22,6 +22,7 @@ Below you find development tools and techniques that help you to write programs 
 * [Start with a Prototype](prototype.md)
 * [Set up a Git Repository](version_control.md)
 * [Create a Folder Structure](folders.md)
+* [Create Issues on GitHub](github_issues.md)
 
 ## Planning and Design
 
@@ -52,7 +53,7 @@ Below you find development tools and techniques that help you to write programs 
 
 ----
 
-## Program Structure
+## Advanced Stuff
 
 * [Counting Lines of Code](loc.md)
 * [Technical Debt](tech_debt.md)

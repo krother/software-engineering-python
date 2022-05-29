@@ -19,8 +19,9 @@ Below you find development tools and techniques that help you to write programs 
 
 ## Getting Started
 
-* [The Prototype](prototype.md)
+* [Start with a Prototype](prototype.md)
 * [Set up a Git Repository](version_control.md)
+* [Create a Folder Structure](folders.md)
 
 ## Fundamental Tools
 

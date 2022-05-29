@@ -1,5 +1,5 @@
 
-# The Prototype
+# Start with a Prototype
 
 Before attempting a more costly clean implementation, you may want to check whether the project is feasible at all.
 You can do such a check by implementing a quick and dirty proof of concept: a **prototype**.

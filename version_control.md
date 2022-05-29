@@ -101,7 +101,7 @@ Do the following:
 You should see a message similar to:
 
     :::text
-    kristian@kristianspiced:~/projects$ git clone git@github.com:krother/snake.git
+    kristian@mylaptop:~/projects$ git clone git@github.com:krother/snake.git
     Cloning into 'snake'...
     remote: Enumerating objects: 5, done.
     remote: Counting objects: 100% (5/5), done.
@@ -112,7 +112,7 @@ You should see a message similar to:
 There also should be a new folder:
 
     :::text
-    kristian@kristianspiced:~/projects$ ls -la snake
+    kristian@mylaptop:~/projects$ ls -la snake
     total 24
     drwxrwxr-x  3 kristian kristian 4096 Mai 28 11:33 .
     drwxrwxr-x 50 kristian kristian 4096 Mai 28 11:33 ..

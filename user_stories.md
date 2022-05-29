@@ -1,47 +1,62 @@
 # User Stories
 
-## What are User Stories?
+Writing down goals increases the probability that you will reach them.
+On one hand, written goals help to focus work both on your own and in a team.
+On the other hand, a writing down everything in detail is often not practical.
+**User Stories** are a short written form for project tasks.
 
-No written goals are a recipe for disaster. On the other hand, a detailed description is often not practical. User Stories are a short written form for project tasks that fits on an index card.
-
-User stories are also called **"a promise of communication"**
-
-## What are User Stories good for?
-
-1. Formalize what a customer wants.
-2. Mark roles and responsibilities.
-3. Document a technical solution.
-4. Document estimates.
-5. Track completion status.
-6. Make it easier to discuss the details later
-
-
-## How to decompose Stories?
-
-![Decomposing Stories](images/decomposing_stories.png)
-
-Right size:
-
-* smallest possible action that a user can do
-* smallest piece with business value.
-* Tasks: no more than two person-days.
 
 ## How to write User Stories?
 
-* Title + 2-3 sentences.
-* Clear benefit for user.
-* No technical description.
-* Write stories on A6 cards, trash them if it doesn't fit.
-* Use the pattern **"As a X, I want to Y, so that Z."**
+A User Story has to fit on an index card.
+It should contain:
 
-## Example User Story
+* a title
+* a clear benefit for users
+* no technical detail
+* optionally 2-3 criteria for success
+
+Many developers use the pattern **"As a X, I want to Y, so that Z."**
+Here is an example User Story for the Snake game:
 
     :::text
-    As a teacher, I want to mark student projects as complete
-    on a website, so I don't need to keep notes on paper.
+    As a player,
+    I want to eat food with my snake,
+    so that it grows.
 
-## Other points
 
-* keep User Stories in backlogs, on SCRUM/Kanban boards.
-* keep User Stories in electronic ticket systems (Trac, Pivotal).
-* User Stories versus Tasks (in Scrum).
+## What are User Stories good for?
+
+User Stories help with a couple of things:
+
+1. formalize what a customer wants
+2. mark who is working on a story
+3. estimate the work required
+4. track completion status (as GitHub issues, a Kanban board or JIRA)
+5. discuss the details later (they are also called *"Promise of Communication"*)
+
+
+## Decomposing Stories
+
+![Decomposing Stories](images/decomposing_stories.png)
+
+Often, a project starts with a few big User Stories (also called Epics).
+These are later decomposed into smaller working units.
+A good size in a development project is 1-2 work days. 
+Finding the right size may take several rounds of decomposing.
+
+----
+
+## Exercise
+
+Write down 3 User Stories for the Snake game.
+Use the format
+
+    :::text
+    As a <who?>, I want to <what?>, so that <why?>.
+
+----
+
+## Further Reading
+
+[User Stories 101](https://adamfard.com/blog/user-stories) by Adam Fard

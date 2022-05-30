@@ -8,7 +8,6 @@ Here we list the most common Python editors.
 | editor | description   |
 |--------|---------------|
 | VS Code | powerful editor with many plugins, maintained by Microsoft |
-| Atom | Open Source editor with many plugins |
 | PyCharm | lots of functionality for writing big programs |
 | Spyder | Anaconda IDE with interactive debugger |
 | IDLE | default basic Python editor |
@@ -23,12 +22,6 @@ Here we list the most common Python editors.
 ## VS Code
 
 A modern general-purpose text editor. There are many plugins for Python and other languages available. It has great integration for git and Docker.
-
-----
-
-## Atom
-
-An Open Source editor that also has great GitHub integration. In many aspects atom is comparable to VS Code.
 
 ----
 

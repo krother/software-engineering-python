@@ -24,17 +24,20 @@ Below you find development tools and techniques that help you to write programs 
 * [Create a Folder Structure](folders.md)
 * [Create Issues on GitHub](github_issues.md)
 
+----
+
 ## Planning and Design
 
+* [Class Diagrams](class_diagram.md)
 * [User Stories](user_stories.md)
 * [CRC Cards](crc_cards.md)
 
-## Fundamental Tools
+----
 
-* [Editors](editors.md)
-* [Environment Variables](environment_variables.md)
-* [Installing packages with pip](pip.md)
+## Building Packages
+
 * [Virtual Environments](virtualenv.md)
+* [Installing packages with pip](pip.md)
 
 ----
 
@@ -42,11 +45,6 @@ Below you find development tools and techniques that help you to write programs 
 
 * [Coding Strategies](writing_code.md)
 * [Debugging](debugging.md)
-
-----
-
-## Cleaning Up
-
 * [PEP8 Code Style](coding_style.md)
 * [Refactoring](refactoring.md)
 * [Code Reviews](code_reviews.md)
@@ -58,17 +56,19 @@ Below you find development tools and techniques that help you to write programs 
 * [Counting Lines of Code](loc.md)
 * [Technical Debt](tech_debt.md)
 * [Project Templates](project_templates.md)
-* [Impostor Syndrome](impostor.md)
 * [Project Management](project_management.md)
 * [How to work with legacy code?](legacy_code.md)
-* [How to recognize good scientific software?](good_software.md)
 * [Documentation Tools](documenting.md)
 * [Citable Code](citable_code.md)
 
 ----
 
-## Extras
+## Other Things
 
+* [Editors](editors.md)
+* [Environment Variables](environment_variables.md)
+* [How to recognize good scientific software?](good_software.md)
+* [Impostor Syndrome](impostor.md)
 * [Exercises](exercises.md)
 
 ----

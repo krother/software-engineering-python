@@ -28,16 +28,18 @@ Below you find development tools and techniques that help you to write programs 
 
 ## Planning and Design
 
+* [Define an Interface](interface.md)
 * [Class Diagrams](class_diagram.md)
 * [User Stories](user_stories.md)
 * [CRC Cards](crc_cards.md)
 
 ----
 
-## Building Packages
+## Packaging and Maintenance
 
 * [Virtual Environments](virtualenv.md)
 * [Installing packages with pip](pip.md)
+* [Create a pip-installable Package](pip_setup.md)
 
 ----
 

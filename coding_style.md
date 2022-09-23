@@ -20,6 +20,13 @@ Then you can analyze any Python file:
     :::bash
     pylint my_program.py
 
+Or all the files in a folder:
+
+    :::bash
+    pyling *.py
+
+----
+
 ### The output of pylint
 
 In the output of `pylint`, there are two sections to pay attention to:
@@ -90,18 +97,15 @@ At the end of the pylint output you find a score of up to 10 points:
     :::text
     Your code has been rated at 8.18/10
 
-When you have fixed some of the issues, re-run pylint and see your score improve. The score directly measures your success and makes working with pylint very rewarding. You don't need to fix every issue. Usually a score above 7.0 is already good enough. It is OK to ignore warning messages you don't agree with. Use your reason, and see the table below:
+When you have fixed some of the issues, re-run pylint and see your score improve. The score directly measures your success and makes working with pylint very rewarding. 
+You should generally aim to fix all the style issues so that your score becomes 10.0.
+You don't need to fix every issue though. You may choose to ignore types of warnings that your team is not committed to. 
 
-| pylint score  | means              |
-|---------------|--------------------|
-| < 0.0         | trouble ahead      |
-| 0.0 - 5.0     | needs cleanup      |
-| 5.0 - 7.0     | reasonable quality |
-| > 7.0         | great code!        |
+#### Ignore warnings
 
-#### Ignoring warnings
-
-If you want to use a CI tool like Travis, `pylint` must finish without warnings, otherwise it will treat the style check as failed. A good practice is to disable some types of warnings (those you and your team agree not to adhere to).
+If you want to run `pylint` in a Continuous Integration system (e.g. in GitHub Actions), it must finish without warnings. 
+Otherwise the CI will treat the style check as failed.
+A good practice is to disable some types of warnings (those you and your team agree not to adhere to).
 
 To ignore PEP8 warnings, create a file `.pylintrc` in your project directory. `pylint` finds it automatically. There you can list the types of warnings you would like to disable:
 

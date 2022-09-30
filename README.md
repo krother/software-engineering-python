@@ -48,7 +48,7 @@ Below you find development tools and techniques that help you to write programs 
 * [Coding Strategies](writing_code.md)
 * [Debugging](debugging.md)
 * [PEP8 Code Style](coding_style.md)
-* [Refactoring](refactoring.md)
+* [Refactoring](refactoring/README.md)
 * [Code Reviews](code_reviews.md)
 
 ----

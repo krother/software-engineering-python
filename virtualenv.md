@@ -1,90 +1,68 @@
 
 # Virtual Environments
 
-When developing software, you often need a specific combination of Python libraries. Sometimes this is difficult, because you require a specific version of a library, want to test your program on multiple Python versions, or simply need to develop your program further, while a stable version is installed on the same machine. In these cases, *virtualenv* comes to the rescue.
+When developing software, you often need a specific combination of Python libraries. Sometimes this is difficult, because you require a specific version of a library, want to test your program on multiple Python versions, or simply need to develop your program further, while a stable version is installed on the same machine. In these cases, **virtual environments** come to the rescue.
 
 ----
 
-## What is virtualenv?
+## What is a virtual environment?
 
-Virtualenv manages multiple installations of Python libraries, so that you can switch between them. It creates a sandbox for each of your projects, in which Python libraries and scripts for that project are installed.
+A virtual environment manages multiple parallel installations of Python interpreters and libraries, so that you can switch between them.
+The virtual environment consists of a folder per project, in which Python libraries for that project are installed.
 
 ----
 
-## How to install virtualenv?
+## How to install a virtual environment?
 
-There are two Python packages required for working conveniently with virtual environments. Both can be installed by *pip*. The first is *virtualenv* itself:
-
-    :::bash
-    sudo pip install virtualenv
-
-The second, *virtualenvwrapper* is a collection of tools that make creating virtual environments and switching between them easier:
-
-    :::bash
-    sudo pip install virtualenvwrapper
-
-You also need to add a few lines to your ~/.bashrc file to:
-
-    :::bash
-    export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/projects
-    source /usr/local/bin/virtualenvwrapper.sh
-
-Finally, you need an extra line for Python3 support:
-
-    :::bash
-    export VIRTUALENV_PYTHON=/usr/bin/python3
+There are many Python tools to manage virtual environments: venv, virtualenv, Pipenv and Poetry.
+A beginner-friendly tool is to use **conda**.
+If you haven't installed Anaconda already, you can find the **Miniconda installer** at [https://conda.io/miniconda.html](https://conda.io/miniconda.html).
 
 ----
 
 ## How to set up a project with virtualenv?
 
-I assume you have a project directory already and now want to use it with *virtualenv*. You set up a new *virtualenv* project with a single command:
+Once the installer finishes and you open a new terminal, you should see `(base)` before the prompt:
 
     :::bash
-    mkvirtualenv myproject
+    (base) ada@adas_laptop:~$
 
-Or to specify a Python version (if you did not do that already):
+This means you are in an virtual environment called *"base"*.
 
-    :::bash
-    mkvirtualenv myproject -p /usr/bin/python3
-
-Behind the scenes *virtualenv* creates a new subdirectory in *~/.virtualenvs* . This is where libraries for your project will be stored. In the *~/.virtualenvs/myproject/bin/* directory, you also find scripts that are run each time you start the sandbox, so that you can e.g. set environment variables.
-
-Next, you connect the sandbox to your existing project:
+Let's create a new one for a project that requires the **tqdm** package:
 
     :::bash
-    cd myproject/
-    setvirtualenvproject ~/.virtualenvs/myproject/ .
+    conda create -n tqdm
+
+Behind the scenes **conda** creates a new subdirectory.
+This is where libraries for your project will be stored.
+There are also scripts to activate the environment.
 
 ----
 
-## How to work with a virtualenv project?
+## How to work with an environment
 
 To start working with your project, type:
 
     :::bash
-    workon myproject
+    conda activate myproject
 
-You should see a *(myproject)* appearing at your prompt. Now, whenever you use *pip* to install something, it will be installed only for *myproject*.
+You should see a *(myproject)* appearing at your prompt.
+Now, whenever you use *pip* to install something, it will be installed only for *myproject*.
 
-When you want to work on something different, type:
+Now check which libraries you have installed:
 
     :::bash
-    deactivate
+    pip freeze
+
+You can install additional libraries with `pip` or `conda`:
+
+    :::bash
+    conda install pandas
+
+When you want to switch back to the base environment, type:
+
+    :::bash
+    conda activate base
 
 The virtual environment is specific for a terminal session. Thus, you can work on as many projects simultaneously as you have terminals open.
-
-Other commands include, but are not limited to:
-
-    :::bash
-    lsvirtualenv
-    rmvirtualenv
-    cpvirtualenv
-
-----
-
-## Links
-
-* [https://virtualenv.pypa.io/](https://virtualenv.pypa.io/)
-* [https://virtualenvwrapper.readthedocs.org/](https://virtualenvwrapper.readthedocs.org/)

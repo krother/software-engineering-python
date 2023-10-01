@@ -1,5 +1,5 @@
 
-# Programming language exercise:
+# Exercise: Programming languages
 
 * pick a programming language
 * find an example piece of code

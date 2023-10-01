@@ -40,6 +40,7 @@ Below you find development tools and techniques that help you to write programs 
 * [Virtual Environments](virtualenv.md)
 * [Installing packages with pip](pip.md)
 * [Create a pip-installable Package](pip_setup.md)
+* [Continuous Integration](continuous_integration.md)
 
 ----
 
@@ -71,6 +72,7 @@ Below you find development tools and techniques that help you to write programs 
 * [Environment Variables](environment_variables.md)
 * [How to recognize good scientific software?](good_software.md)
 * [Impostor Syndrome](impostor.md)
+* [Exercise: Programming Languages](programming_language_exercise.md)
 * [Exercises](exercises.md)
 
 ----

@@ -20,19 +20,17 @@ If you haven't installed Anaconda already, you can find the **Miniconda installe
 
 ----
 
-## How to set up a project with virtualenv?
+## How to set up a project with conda?
 
 Once the installer finishes and you open a new terminal, you should see `(base)` before the prompt:
 
-    :::bash
     (base) ada@adas_laptop:~$
 
 This means you are in an virtual environment called *"base"*.
 
-Let's create a new one for a project that requires the **tqdm** package:
+Let's create a new one for a project called **snake**, specifying a Python version:
 
-    :::bash
-    conda create -n tqdm
+    conda create -n snake python=3.11
 
 Behind the scenes **conda** creates a new subdirectory.
 This is where libraries for your project will be stored.
@@ -44,25 +42,21 @@ There are also scripts to activate the environment.
 
 To start working with your project, type:
 
-    :::bash
-    conda activate myproject
+    conda activate snake
 
-You should see a *(myproject)* appearing at your prompt.
+You should see a *(snake)* appearing at your prompt.
 Now, whenever you use *pip* to install something, it will be installed only for *myproject*.
 
 Now check which libraries you have installed:
 
-    :::bash
     pip freeze
 
 You can install additional libraries with `pip` or `conda`:
 
-    :::bash
     conda install pandas
 
 When you want to switch back to the base environment, type:
 
-    :::bash
     conda activate base
 
 The virtual environment is specific for a terminal session. Thus, you can work on as many projects simultaneously as you have terminals open.

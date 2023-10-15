@@ -1,5 +1,5 @@
 
-# Set up a Git Repository
+# Set up a Repository on GitHub
 
 Version Control is in my opinion the single most important tool of modern software development.
 Most of the time, using Version Control means using **git**.
@@ -45,7 +45,7 @@ The Private/Public setting is easy to change later on as well.
 
 This is a no-brainer. Tick this box.
 
-### Step 4: Add a .gitignore
+### Step 4: Add a .gitignore file
 
 The `.gitignore` file prevents that many types of temporary or auto-generated files are added to your repository.
 It is another must-have.
@@ -74,7 +74,6 @@ The dialog should look similar to this:
 Press the **Create Repository** button.
 After a few seconds, you should see a page listing the files in your new project repo:
 
-    :::text
     .gitignore
     LICENSE
     README.md
@@ -100,7 +99,6 @@ Do the following:
 
 You should see a message similar to:
 
-    :::text
     kristian@mylaptop:~/projects$ git clone git@github.com:krother/snake.git
     Cloning into 'snake'...
     remote: Enumerating objects: 5, done.
@@ -111,7 +109,6 @@ You should see a message similar to:
 
 There also should be a new folder:
 
-    :::text
     kristian@mylaptop:~/projects$ ls -la snake
     total 24
     drwxrwxr-x  3 kristian kristian 4096 Mai 28 11:33 .
@@ -128,7 +125,6 @@ Now you can start adding code to your repository.
 For instance you could add a prototype if you have one.
 The sequence of commands might look like this:
 
-    :::bash
     cd snake/
     cp ~/Desktop/prototype.py .
     git status

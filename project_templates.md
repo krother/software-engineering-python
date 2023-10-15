@@ -20,13 +20,11 @@ Fortunately, there is a de-facto standard for Python projects. The **pyscaffold*
 
 The command-line-tool **pyscaffold** creates the directory structure for a Python project. To install and use **pyscaffold**, start from your main folder or wherever you keep your projects, and type:
 
-    :::bash
     sudo pip install pyscaffold
     putup myproject
 
 Where `myproject` is the name of your Python package. You should see that **pyscaffold** has created a `myproject/` directory with a couple of subdirectories and files:
 
-    :::bash
     docs/   
     myproject/
     tests/
@@ -47,7 +45,6 @@ Let's have a look what each of these does.
 #### docs/
 This is the place to keep documentation. Initial files for use with the document generator **Sphinx** are already there. So if you have **Sphinx** installed, you can create and view your documentation with:
 
-    :::bash
     cd docs
     make html
     firefox _build/html/index.html
@@ -58,7 +55,6 @@ Here your Python files have their home. You can add your own Python modules and 
 #### tests/
 This is where automated tests are stored. Apart from an `__init__.py` file, the directory should be empty. Nevertheless you can already run the test suite with
 
-    :::bash
     python setup.py test
 
 #### Other directories
@@ -73,17 +69,14 @@ The `setup.py` file is the heartpiece of your project. It contains instructions 
 
 The most common use is to build your program. The following command collects everything that is needed to run the program'in the `build/` directory:
 
-    :::bash
     python setup.py build
 
 You can also install the program alongside other Python libraries on your system:
 
-    :::bash
     python setup.py install
 
 Finally, you can create a `.tar.gz` archive for distributing the containing all files specified in the `MANIFEST.in` file:
 
-    :::bash
     python setup.py sdist
 
 
@@ -107,7 +100,6 @@ A script that facilitates updating version numbers with git.
 #### requirements.txt
 This file is used by **pip** to resolve dependencies. If your program requires specific version numbers of libraries, you can write them into *requirements.txt*. The following commands installs all the dependencies:
 
-    :::bash
     pip -r requirements.txt
 
 ### Benefits of using pyscaffold

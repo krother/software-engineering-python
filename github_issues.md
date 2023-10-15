@@ -12,14 +12,12 @@ Go to the **Issues** tab on your repository on GitHub.
 Press the big **New Issue** button on the right side.
 Enter a title for the Issue, e.g.
 
-    :::text
     Features for the Snake Game
 
 In the large text field below, you can add what is to be done.
 There are plenty of controls to format text and attach files (e.g. screenshots).
 One of the buttons lets you create a **Checklist**:
 
-    :::text
     - [ ] there is a wall around the playing field
     - [ ] there is food on the playing field
     - [ ] the snake gets longer when it eats food

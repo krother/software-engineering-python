@@ -65,8 +65,8 @@ The basic refactoring workflow is:
 
 To do the exercises, you need to download two files:
 
-* :::file space_game.py
-* :::file test_space_game.py
+* [space_game.py](space_game.py)
+* [test_space_game.py](test_space_game.py)
 
 The game is a text-based command-line app that should run in any Python editor/environment.
 Make sure it runs:
@@ -163,7 +163,6 @@ We will use the following recipe:
 
 This recipe has a few more steps:
 
-    :::text
     1. Find a piece of code you want to move into a function
     2. Give the function a name and create a `def` line
     3. Move the code into the new function
@@ -179,7 +178,6 @@ Let's do this on a few examples:
 The paragraph labeled **display inventory** on top of `travel()` makes a good refactoring candidate.
 Create a new function using the signature:
 
-    :::python3
     def display_inventory(credits, engines, copilot)
 
 This function does not need a return statement.
@@ -209,13 +207,11 @@ Start with the recipe for extracting a function.
 
 Use the signature:
 
-    :::python3
     def visit_planet(planet, engines, copilot, credits, game_end):
         ...
 
 and the function call:
 
-    :::python3
     destinations, engines, copilot, credits, game_end = \
         visit_planet(planet, engines, copilot, credits, game_end)
 
@@ -241,7 +237,6 @@ What does that mean?
 
 In his [Clean Code Lectures](https://www.youtube.com/watch?v=7EmboKQH8lM), Uncle Bob (Robert C. Martin) states:
 
-    :::text
     Q: When is a function doing exactly one thing?
     
     A: When you cannot make two functions out of it.
@@ -276,17 +271,14 @@ We need to modify a lot of code.
 
 First, instead of setting multiple booleans to `False` in `travel()`, define an empty set.
 
-    :::python3
     flags = set()
 
 Create a preset list of values on top of the module (avoids having quotes everywhere):
 
-    :::python3
     credits, engine, copilot, game_end = range(4)
 
 To check a flag, we would use its name as a string. So the `while` condition in `travel()` would become:
 
-    :::python3
     while not ('crystal_found' in flags or 'dead' in flags):
 
 Now, we need to change the function `display_inventory()` as well:
@@ -316,7 +308,6 @@ Create a function for the hyperdrive shopping scene on Centauri.
 
 The code left in `visit_planet()` should look like this:
 
-    :::python3
     if planet == "centauri":
         print(TEXT["CENTAURI_DESCRIPTION"])
         destinations = ["earth", "orion"]
@@ -324,7 +315,6 @@ The code left in `visit_planet()` should look like this:
 
 Do the same for the other puzzles:
 
-    :::python3
     def star_quiz(flags):
 
     def hire_copilot(flags):
@@ -340,7 +330,6 @@ With each planet in `visit_planet()` there is always a list of destinations retu
 
 Let's use the following dictionary instead:
 
-    :::python3
     STARMAP = {
         'earth': ['centauri', 'sirius'],
         'centauri': ['earth', 'orion'],
@@ -371,7 +360,6 @@ Let's see what we can do.
 Should we maybe extract the descriptions of each planet into *another* dictionary?
 We would get:
 
-    :::python3
     PLANET_DESCRIPTIONS = {
         'earth': TEXT['EARTH_DESCRIPTION],
         'sirius': TEXT['SIRIUS_DESCRIPTION],
@@ -394,7 +382,6 @@ These are attributes of the new class.
 
 Let's define a new class with the following signature:
 
-    :::python3
     class Planet:
 
         def __init__(self, name, description, connections):
@@ -410,12 +397,10 @@ We will convert the function `visit_planet()` into a method of the new `Planet` 
 
 Move the entire code from `visit_planet()` into a new method with the signature:
 
-    :::python3
     def visit(self, flags):
 
 As the first thing, have the planet print its own description:
 
-    :::python3
         print(self.description)
 
 That removes a few lines from the function and makes the code easier to read.
@@ -428,7 +413,6 @@ The tests won't pass at this point. You may want to run them to make sure you ar
 Let's create a dictionary of planets.
 We will do so on the module level, replacing `STARMAP`:
 
-    :::python3
     PLANETS = {
         'earth': Planet('earth', TEXT['EARTH_DESCRIPTION', ['centauri', 'sirius']]),
         ...
@@ -437,7 +421,6 @@ We will do so on the module level, replacing `STARMAP`:
 We use the `Planet` instances in the `travel()` function. 
 The code should be
 
-    :::python3
     planet = PLANETS['earth']
     ...
     while ...:
@@ -458,12 +441,10 @@ Some planets have a puzzle. Add a puzzle attribute to `Planet.__init__()`
 Next, we pass these functions as callbacks in the `puzzle` argument when creating `Planet` objects.
 One entry in the `PLANETS` dict would look like:
 
-    :::python3
     'sirius`: Planet('sirius', TEXT['SIRIUS_DESCRIPTION'], star_quiz)
 
 Now in the `visit()` method, all you need to do is call the callback:
 
-    :::python3
     if puzzle:
         puzzle(flags)
 

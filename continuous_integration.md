@@ -28,7 +28,6 @@ GitHub Actions needs instructions how to install the program.
 Create a folder `.github/workflows/`. 
 Place a text file `check.yml` into that folder containing the following:
 
-    :::text
     name: run_tests
     
     on:
@@ -78,7 +77,6 @@ Commit and push the changes.
 
 Copy the following code into your `README.md` file:
 
-    :::text
     ![Python application](https://github.com/USER/REPO/workflows/run_tests/badge.svg)
 
 Replace **USER** and **REPO** by the data of your project.

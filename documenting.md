@@ -16,7 +16,6 @@ That said, there are a number of good Python tools to build and maintain documen
 
 Running Sphinx could look like this:
 
-    :::bash
     sphinx-build html
 
 Sphinx has its strengths in:
@@ -37,7 +36,6 @@ If you like to know more, check out this **[Talk by Eric Holscher](https://www.y
 
 A very cool feature is that you can run a local documentation server with
 
-    :::bash
     mkdocs serve
 
 and the local website is automatically updated as you edit the Markdown documents.

@@ -18,7 +18,6 @@ In this article, you can learn how to set and read environment variables on a Un
 
 Type into the terminal:
 
-    :::bash
     export MY_TEXT=hello
 
 Note the following:
@@ -35,7 +34,6 @@ Note the following:
 
 Type into a terminal:
 
-    :::bash
     echo $MY_TEXT
 
 The Unix `echo` command is the equivalent of `print()` in Python.
@@ -43,7 +41,6 @@ The `$` symbol dereferences the variable.
 
 If you want to see *all* environment variables that are defined, try the command:
 
-    :::bash
     env
 
 The output is usually quite a mess.
@@ -54,7 +51,6 @@ The output is usually quite a mess.
 
 No. Each environment has a local *scope*. Each program has its own variables. That means that typing
 
-    :::bash
     echo $MY_TEXT
 
 in two terminals may yield different results.
@@ -69,13 +65,11 @@ E.g. when you start a Python program from a Unix command line, it receives the c
 If you want **all** programs to have a certain environment variable, add the `EXPORT` statement to a configuration file in your home directory.
 Open the file `.bashrc` (Linux) or `.bash_profile` (MacOS) and add the same line as above:
 
-    :::bash
     export MY_TEXT=hello
 
 The changes are applied as soon as you start a new terminal.
 You can update your environment with:
 
-    :::bash
     source ~/.bashrc
 
 **Note: Restart your Python editor, if you want it to see the new environment variables.**
@@ -86,7 +80,6 @@ You can update your environment with:
 
 You can read an environment variable in two lines:
 
-    :::python3
     import os
 
     text = os.getenv('MY_TEXT')
@@ -109,5 +102,4 @@ Here are a few common ones:
 
 If you want to append a directory to an existing `PATH` or `PYTHONPATH`, this expression is useful:
 
-    :::bash
     export PATH=$PATH:/my/new/dir/

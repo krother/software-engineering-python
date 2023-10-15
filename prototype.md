@@ -20,27 +20,23 @@ The following code is a prototype for a Snake game.
 The program is a simple game where you move a symbol around with the `WASD` keys.
 The goal of this prototype is to prove that we can process keyboard input and draw into a terminal. 
 
-:::include prototype.py
-
 
 ## Exercise: Run the prototype
 
 #### Step 1
 
-Save the code in :::file prototype.py to a Python module.
+Save the code in [prototype.py](prototype.py) to a Python module.
 
 #### Step 2
 
 On Windows, you need to install `windows-curses`:
 
-    :::bash
     pip install windows-curses
 
 #### Step 3
 
 Change to the directory with the `.py` file and execute the code with:
 
-    :::bash
     python prototype.py
     
 You should see a screen where you can control the `'O'` with the keys **W, A, S and D**:

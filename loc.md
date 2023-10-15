@@ -9,12 +9,10 @@ More code means more work. The amount of code gives you a ballpark figure of how
 
 You can count the total number of files on Unix:
 
-    :::bash
     find . -name "*.py" | wc -l
 
 A common metric is the number of **lines of code (LOC)**. The following command gives you the total number of LOC for all Python files in a Python directory tree:
 
-    :::bash
     find . -name "*.py" | xargs wc -l
 
 Empty lines, docstrings and comments are counted, too, as they are part of the source code.

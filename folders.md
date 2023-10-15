@@ -12,7 +12,6 @@ A **Python package** is simply a folder that contains `.py` files.
 Create a folder `snake` inside your repository.
 On the bash terminal, you would use
 
-    :::bash
     mkdir snake
 
 If your git repository is also called `snake`, you may want to rename your project folder to something else like `snake_project`, `snake_repo` or similar.
@@ -26,7 +25,6 @@ You will also want to have a place where you add test code later.
 Name that folder `tests/`.
 We will leave it empty for now.
 
-    :::bash
     mkdir tests
 
 ----
@@ -37,7 +35,6 @@ You may want to create a Python module (a `.py` file) to make sure everything is
 Create a file `game.py` inside the `snake/` folder.
 Add a placeholder function to it:
 
-    :::python3
     def play_snake():
         print('this is a snake game')
 
@@ -59,14 +56,12 @@ Importing the `play_snake()` function to play the game is a bit inconvenient.
 Let's create a shortcut.
 Create a file named `__main__.py` (with double underscores on both ends) in the package folder that contains the following code:
 
-    :::python3
     from game import play_snake
     
     play_snake()
 
 Now it should be possible to start the game by typing:
 
-    :::text
     python snake
 
 ----
@@ -75,7 +70,6 @@ Now it should be possible to start the game by typing:
 
 At this point, your project folder should contain:
 
-    :::text
     LICENSE
     prototype.py
     README.md

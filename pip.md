@@ -7,12 +7,10 @@
 
 To install a Python package, call `pip` with the package name:
 
-    :::bash
     pip install pandas
 
 You can specify the exact version of a package:
 
-    :::bash
     pip install pandas==0.25.0
 
 ----
@@ -21,7 +19,6 @@ You can specify the exact version of a package:
 
 First, create a file `requirements.txt` in your project directory. The file should look similar to this:
 
-    :::text
     pandas==0.25
     numpy>=1.17
     scikit-learn
@@ -29,7 +26,6 @@ First, create a file `requirements.txt` in your project directory. The file shou
 
 Second, ask `pip` to install everything:
 
-    :::bash
     pip -r requirements.txt
 
 ----
@@ -38,7 +34,6 @@ Second, ask `pip` to install everything:
 
 If a repository has a `setup.py` file, you could install directly from git. This is useful to install branches, forks and other work in progress:
 
-    :::bash
     pip install git+https://github.com/pandas-dev/pandas.git
 
 ----
@@ -49,7 +44,6 @@ When developing, you might want to pip-install a working copy. This allows you t
 
 For the following to work, your project folder needs to have a `setup.py`:
 
-    :::bash
     pip install --editable .
 
 ----
@@ -58,12 +52,10 @@ For the following to work, your project folder needs to have a `setup.py`:
 
 This one prints all packages you have installed and their versions:
 
-    :::bash
     pip freeze
 
 To search for a pacakge, use `grep`:
 
-    :::bash
     pip freeze | grep pandas
 
 ----
@@ -71,7 +63,6 @@ To search for a pacakge, use `grep`:
 
 `pip` also removes packages:
 
-    :::bash
     pip uninstall pandas
 
 ----
@@ -82,7 +73,6 @@ Usually, packages are stored in the `site_packages/` folder. Where this one is d
 
 You might want to check your `PYTHONPATH` environment variable. To do so from Python, use:
 
-    :::python3
     import sys
     print(sys.path)
 

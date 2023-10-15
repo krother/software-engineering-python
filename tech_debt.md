@@ -40,7 +40,6 @@ A programmer might write code that is difficult to maintain because he doesn't k
 
 Lack of experience often results in code that is unnecessary long or complicated. This can happen even to experienced programmers switching from another language. Once, we stumbled upon the following Python code fragment written by a C programmer:
 
-    :::python3
     i = 0; s = []
     f = open(filename,'r')
     while 1:
@@ -53,7 +52,6 @@ Lack of experience often results in code that is unnecessary long or complicated
 
 This code fragment can be written as:
 
-    :::python3
     s = list(open(filename).read())
 
 Even though Python is considered easy to learn, writing good Python code is not trivial.
@@ -73,7 +71,6 @@ Python checks for SyntaxErrors and the most obvious exceptions at runtime. Unfor
 
 Even a simple typo like the following could pass unnoticed:
 
-    :::python3
 	  idx = 3
 
     ...

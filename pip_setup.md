@@ -6,8 +6,7 @@ Making your code pip-installable can be done by adding an extra configuration fi
 
 Assume your project folder contains:
 
-    :::text
-    super_snake/   - module folder you want to import
+    snake_game/   - module folder you want to import
     tests/         - the test code for pytest
     .git/          - the commit history (managed by git)
     README.md      - documentation
@@ -29,13 +28,10 @@ The `setup.py` script will look for the source code there.
 **setuptools** is a Python library that builds and installs Python packages.
 You may need to install it first:
 
-    :::bash
     pip install setuptools
 
 In order to use setuptools, you need a file called `setup.py` that tells the installer what to install.
 You can use the following `setup.py` file as a starting point:
-
-    :::python3 
 
     from setuptools import setup
     import os
@@ -45,17 +41,21 @@ You can use the following `setup.py` file as a starting point:
         return open(os.path.join(os.path.dirname(__file__), "README.md")).read()
 
     setup(
-       name="super_snake",                       # snake is already taken on PyPi
+       name="snake_game",                        # snake is already taken on PyPi
        version="0.0.1",                          # uses *semantic versioning*
        description="a terminal-based snake game",   
        long_description=get_readme(),
        author="your_name",
        author_email="your@name.com",
-       packages=["super_snake"],                 # the name of the folder with .py modules
+       packages=["snake_game"],                  # the name of the folder with .py modules
        url="https://github.com/...",
        license="MIT",
        classifiers=[
           "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
        ]
     )
 
@@ -70,7 +70,6 @@ Here is a [video explaining how setup.py works](https://www.youtube.com/watch?v=
 When developing a program, the first thing you want to do is to install your program in development mode.
 Go to the folder where the ``setup.py`` file is located and run the command:
 
-    :::bash
     python setup.py develop
 
     OR
@@ -81,8 +80,7 @@ This makes your project available to the rest of your Python environment
 (Python creates a link to your project somewhere in the PYTHONPATH).
 Now you should be able to run from any other Python program:
 
-    :::python3
-    import super_snake
+    import snake_game
 
 In other words, you don't actually need to be in your project folder to use your program.
 This is super convenient! You can use your package from anywhere as if it were an official library, like **pandas** or **sklearn**.
@@ -100,7 +98,6 @@ Just executing the import twice does not work.
 If you want to use your library but not edit it (e.g. in a production environment), you may want to copy it to where Python stores all the other packages.
 This can be done with another one-liner.
 
-    :::bash
     python setup.py install
 
     OR
@@ -116,7 +113,6 @@ The location of it depends on your operating system and Python distribution.
 
 If you have a `setup.py`, you can pip-install your package directly from GitHub:
 
-    :::bash
     pip install <github-url>
    
 ----
@@ -125,7 +121,6 @@ If you have a `setup.py`, you can pip-install your package directly from GitHub:
 
 If you want to package all files of your projects into an archive, you can do this with:
 
-    :::bash
     python setup.py sdist
 
 This creates a `dist/` folder with a `.tar.gz` file that you can move around easily.
@@ -136,8 +131,7 @@ This creates a `dist/` folder with a `.tar.gz` file that you can move around eas
 
 If you would like to upload your program to PyPi, so that anyone can install it with 
 
-    :::bash
-    pip install super_snake
+    pip install snake_game
 
 you need to follow a few more steps.
 This is not difficult but a bit tedious.

@@ -19,7 +19,6 @@ It should contain:
 Many developers use the pattern **"As a X, I want to Y, so that Z."**
 Here is an example User Story for the Snake game:
 
-    :::text
     As a player,
     I want to eat food with my snake,
     so that it grows.
@@ -52,7 +51,6 @@ Finding the right size may take several rounds of decomposing.
 Write down 3 User Stories for the Snake game.
 Use the format
 
-    :::text
     As a <who?>, I want to <what?>, so that <why?>.
 
 ----

@@ -48,7 +48,6 @@ The core logic of how the snake moves should not change because of that.
 A great thing about class diagrams is that you can create them to code easily.
 The Python `dataclasses` module saves you a lot of typing:
 
-    :::python3
     from dataclasses import dataclass
 
     @dataclass
@@ -74,7 +73,6 @@ But we leave the method bodies empty for now.
 The `@dataclass` automatically creates the `__init__()` and `__repr__()` methods for you, so that you can set and inspect the attribute values.
 The code is already executable:
 
-    :::python3
     pf = PlayingField(size=(10, 10))
     print(pf)
     print(pf.size)
@@ -106,7 +104,6 @@ In Python, one could even state that the data structures are practically *identi
 Using the `@property` decorator, you can translate attributes into each other.
 The following code translates the `size` attribute into two new attributes `size_x` and `size_y`:
 
-    :::python3
     @property
     def size_x(self):
         return self.size[0]
@@ -117,7 +114,6 @@ The following code translates the `size` attribute into two new attributes `size
 
 Now you can use all three attributes without storing redundant data:
 
-    :::python3
     pf = PlayingField(size=(5, 5))
     print(pf.size)
     print(pf.size_x)

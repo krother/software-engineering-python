@@ -45,7 +45,6 @@ While both parts may change, the interface should remain stable.
 Let's separate the **User Interface** of the snake game from the **Game Logic**.
 For that, we will define a `SnakeGame` class that will be used as the only point of communication by the user interface:
 
-    :::python3
     class SnakeGame:
 
         running: bool

@@ -41,7 +41,6 @@ It is more helpful to think of programming as an ongoing activity, like gardenin
 
 One thing that makes software projects difficult for managers is that they cannot see a half-finished program. Many times, they will ask questions like:
 
-    :::text
     "When will the program be finished?"
 
 It is very difficult for non-programmers to understand that this question is meaningless. You might as well

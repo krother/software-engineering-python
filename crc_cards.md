@@ -1,5 +1,5 @@
 
-## CRC Cards
+# CRC Cards
 
 CRC stands for **Class-Responsibility-Collaboration**.
 In brief, CRC cards help you to build a better object-oriented architecture for your program.

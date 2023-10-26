@@ -27,8 +27,7 @@ Getting Started
 .. toctree::
    :maxdepth: 1
 
-   project_checklist.rst
-   prototype.md
+   prototype.rst
    version_control.md
    folders.md
    github_issues.md
@@ -45,6 +44,7 @@ Planning and Design
    class_diagram.md
    user_stories.md
    crc_cards.md
+   project_checklist.rst
 
 --------------
 

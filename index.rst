@@ -19,20 +19,7 @@ piece of software is more complex. You are facing questions like:
 Below you find development tools and techniques that help you to write
 programs that get the job done and don’t fall apart.
 
-----
 
-Getting Started
----------------
-
-.. toctree::
-   :maxdepth: 1
-
-   prototype.rst
-   version_control.md
-   folders.md
-   github_issues.md
-
---------------
 
 Planning and Design
 -------------------
@@ -41,8 +28,8 @@ Planning and Design
    :maxdepth: 1
 
    interface.md
-   class_diagram.md
    user_stories.md
+   github_issues.md
    crc_cards.md
    project_checklist.rst
 
@@ -54,7 +41,6 @@ Packaging and Maintenance
 .. toctree::
    :maxdepth: 1
 
-   virtualenv.md
    pip.md
    pip_setup.md
    continuous_integration.md

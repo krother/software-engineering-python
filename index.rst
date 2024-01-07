@@ -35,18 +35,6 @@ Planning and Design
 
 --------------
 
-Packaging and Maintenance
--------------------------
-
-.. toctree::
-   :maxdepth: 1
-
-   pip.md
-   pip_setup.md
-   continuous_integration.md
-
---------------
-
 Coding Strategies
 -----------------
 

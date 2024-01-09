@@ -45,7 +45,6 @@ Coding Strategies
    debugging.md
    coding_style.md
    refactoring/README.md
-   code_reviews.md
 
 --------------
 

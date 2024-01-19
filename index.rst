@@ -42,7 +42,6 @@ Coding Strategies
    :maxdepth: 1
 
    writing_code.md
-   debugging.md
    coding_style.md
    refactoring/README.md
 
